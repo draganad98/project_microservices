@@ -1,0 +1,41 @@
+# ==========================
+# .NET
+# ==========================
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.pdb
+*.log
+*.cache
+*.dll
+*.exe
+*.db
+
+# ==========================
+# Visual Studio
+# ==========================
+.vscode/
+*.vs/
+TestResults/
+_ReSharper*/
+*.ncrunch*
+
+# ==========================
+# Angular / Frontend
+# ==========================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.vscode/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/package-lock.json
+frontend/yarn.lock
+
+# ==========================
+# Misc
+# ==========================
+*.env
+*.local
