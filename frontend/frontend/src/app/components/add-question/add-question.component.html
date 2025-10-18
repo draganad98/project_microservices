@@ -1,0 +1,59 @@
+<div class="add-question-form">
+  <mat-form-field appearance="fill" class="form-field full-width">
+    <mat-label>Question Text</mat-label>
+    <textarea matInput [(ngModel)]="question.text" rows="4"></textarea>
+  </mat-form-field>
+
+  <div class="row-fields">
+    <mat-form-field appearance="fill" class="form-field small-field">
+      <mat-label>Points</mat-label>
+      <input matInput type="number" [(ngModel)]="question.points">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field small-field">
+      <mat-label>Type</mat-label>
+      <mat-select [(ngModel)]="question.type">
+        <mat-option value="fillBlank">Fill Blank</mat-option>
+        <mat-option value="trueFalse">True / False</mat-option>
+        <mat-option value="multipleOne">Multiple One</mat-option>
+        <mat-option value="multipleMore">Multiple More</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="question.type === 'fillBlank'">
+    <mat-form-field class="full-width">
+      <mat-label>Correct Answer</mat-label>
+      <input matInput [(ngModel)]="question.correctText">
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="question.type === 'trueFalse'" class="tf-buttons">
+    <button mat-raised-button color="primary" (click)="question.correct = true" [disabled]="question.correct === true">True</button>
+    <button mat-raised-button color="warn" (click)="question.correct = false" [disabled]="question.correct === false">False</button>
+  </div>
+
+
+<div *ngIf="question.type === 'multipleOne'">
+  <div *ngFor="let choice of question.choices; let i = index" class="multiple-choice-row">
+    <mat-radio-button [checked]="choice.isCorrect" (click)="selectCorrect(i)"></mat-radio-button>
+    <input matInput [(ngModel)]="choice.text" class="choice-input">
+  </div>
+</div>
+
+<div *ngIf="question.type === 'multipleMore'">
+  <div *ngFor="let choice of question.choices; let i = index" class="multiple-choice-row">
+    <mat-checkbox [(ngModel)]="choice.isCorrect" name="choiceIsCorrect{{i}}"></mat-checkbox>
+    <input matInput [(ngModel)]="choice.text" class="choice-input" name="choiceText{{i}}">
+  </div>
+</div>
+
+
+  <div class="form-actions">
+    <button mat-stroked-button color="primary" (click)="doneClicked()">Done</button>
+    <button mat-stroked-button color="warn" (click)="closeClicked()">Close</button>
+  </div>
+</div>
+
+
+

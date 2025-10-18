@@ -1,0 +1,93 @@
+<div class="quizzes-layout">
+  <div class="quizzes-list-container">
+<button class="close-button" [routerLink]="['/user/home']">Close</button>
+    
+<div class="filters" style="position: relative;">
+  
+
+  <mat-form-field appearance="fill">
+    <mat-label>Categories</mat-label>
+    <mat-select [(ngModel)]="selectedCategory" multiple>
+      <mat-option *ngFor="let cat of categories" [value]="cat.id">{{ cat.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Difficulty</mat-label>
+    <mat-select [(value)]="selectedDifficulty">
+      <mat-option value="">All</mat-option>
+      <mat-option value="Easy">Easy</mat-option>
+      <mat-option value="Medium">Medium</mat-option>
+      <mat-option value="Hard">Hard</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Keyword</mat-label>
+    <input matInput [(ngModel)]="keyword" placeholder="Search by title" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="applyFilters()">Apply Filters</button>
+</div>
+
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 full-width-table">
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell *matCellDef="let quiz"> {{ quiz.title }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="categories">
+        <th mat-header-cell *matHeaderCellDef> Categories </th>
+        <td mat-cell *matCellDef="let quiz"> {{ getCategoryNames(quiz) }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let quiz"> {{ quiz.description }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="timeLimitSeconds">
+        <th mat-header-cell *matHeaderCellDef> Time limit (seconds) </th>
+        <td mat-cell *matCellDef="let quiz"> {{ quiz.timeLimitSeconds }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="difficulty">
+        <th mat-header-cell *matHeaderCellDef> Difficulty </th>
+        <td mat-cell *matCellDef="let quiz"> {{ quiz.difficultyLevel }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="questionsNum">
+        <th mat-header-cell *matHeaderCellDef> Questions num </th>
+        <td mat-cell *matCellDef="let quiz"> {{ quiz.questionsNum }} </td>
+      </ng-container>
+
+      
+      
+
+      <ng-container matColumnDef="start">
+        <th mat-header-cell *matHeaderCellDef> Start </th>
+        <td mat-cell *matCellDef="let quiz">
+          <button mat-raised-button color="primary" (click)="onStart(quiz)">Start</button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator
+  [length]="totalQuizzes"
+  [pageSize]="pageSize"
+  [pageIndex]="pageIndex"
+  [pageSizeOptions]="[5, 10, 20]"
+  (page)="onPageChange($event)">
+</mat-paginator>
+
+
+  </div>
+
+  
+</div>
+

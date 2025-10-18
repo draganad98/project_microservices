@@ -1,0 +1,69 @@
+<div class="global-list-container">
+  <div class="left-panel">
+ <button class="close-button" [routerLink]="getHomeLink()">Close</button>
+    <h3>Select Quiz</h3>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Quiz Title</mat-label>
+      <mat-select [(value)]="selectedQuizId">
+        <mat-option [value]="0">All Quizzes</mat-option>
+        <mat-option *ngFor="let quiz of quizzes" [value]="quiz.id">
+          {{ quiz.title }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h3>Time Period</h3>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Period</mat-label>
+      <mat-select [(value)]="selectedPeriod">
+        <mat-option value="all">All Time</mat-option>
+        <mat-option value="today">Today</mat-option>
+        <mat-option value="thisWeek">This Week</mat-option>
+        <mat-option value="thisMonth">This Month</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onApplyFilters()">
+      Apply Filters
+    </button>
+  </div>
+
+  <div class="right-panel">
+    <h3>Leaderboard</h3>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 full-width-table">
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> Position </th>
+        <td mat-cell *matCellDef="let row"> {{ row.position }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="username">
+        <th mat-header-cell *matHeaderCellDef> Username </th>
+        <td mat-cell *matCellDef="let row"> {{ row.username }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="score">
+        <th mat-header-cell *matHeaderCellDef> Score </th>
+        <td mat-cell *matCellDef="let row"> {{ row.score }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="finishedAt">
+        <th mat-header-cell *matHeaderCellDef> Time </th>
+        <td mat-cell *matCellDef="let row"> {{ row.finishedAt | date:'short' }} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator
+      [length]="totalItems"
+      [pageSize]="pageSize"
+      [pageIndex]="pageIndex"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)">
+    </mat-paginator>
+  </div>
+</div>
+
+
+

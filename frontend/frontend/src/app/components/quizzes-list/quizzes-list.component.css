@@ -1,0 +1,96 @@
+
+::ng-deep .mat-header-cell, 
+::ng-deep .mat-cell {
+    text-align: center !important;
+    justify-content: center; 
+}
+
+.quizzes-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  color: black;
+}
+
+.full-width-table {
+  width: 100%;
+  table-layout: fixed; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+th, td {
+  padding: 6px 10px;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.action-buttons button {
+  min-width: 60px;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+}
+
+::ng-deep .mat-paginator {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: black !important;
+}
+
+::ng-deep .mat-paginator .mat-paginator-range-label,
+::ng-deep .mat-paginator .mat-paginator-page-size-label,
+::ng-deep .mat-paginator .mat-icon-button {
+  color: black !important;
+}
+.close-button {
+  position: absolute;
+  top: -30px;
+  right: 5px;
+  background-color: #e74c3c; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+

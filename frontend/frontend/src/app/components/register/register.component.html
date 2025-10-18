@@ -1,0 +1,36 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="login-form">
+  <button class="close-button" [routerLink]="['/login']">Close</button>
+  <mat-form-field appearance="fill" class="login-field">
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" type="text" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="login-field">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="login-field">
+  <mat-label>Password</mat-label>
+
+  <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+
+  <button mat-icon-button matSuffix
+          type="button"
+          aria-label="Toggle password visibility"
+          (click)="togglePasswordVisibility()">
+    <mat-icon>{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
+  </button>
+</mat-form-field>
+
+
+  <div class="image-upload">
+    <input type="file" accept="image/*" (change)="onFileSelected($event)">
+    <img [src]="previewUrl" alt="Preview" class="preview-img">
+  </div>
+
+  <button mat-raised-button color="primary" type="submit" class="login-button">
+    Register
+  </button>
+</form>
+

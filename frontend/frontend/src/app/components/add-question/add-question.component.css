@@ -1,0 +1,39 @@
+.add-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row-fields {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.small-field {
+  flex: 0 0 100px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.tf-buttons, .multiple-choice-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice-input {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+

@@ -1,0 +1,120 @@
+
+<div *ngIf="!isFinished" class="timer-container">
+  Remaining time: {{ timer }} seconds
+</div>
+
+
+<div *ngIf="isLoading">Loading questions...</div>
+
+
+<div *ngIf="!isLoading && currentQuestion && !isFinished" class="quiz-container">
+  <h2>Question {{ currentPage }}</h2>
+  <h3>{{ currentQuestion.text }} ({{ currentQuestion.points }} points)</h3>
+
+
+  <div *ngIf="currentQuestion.type === 'fillBlank'">
+    <input type="text" [(ngModel)]="fillBlankAnswer" placeholder="Enter answer" />
+  </div>
+
+
+  <div *ngIf="currentQuestion.type === 'trueFalse'">
+    <button (click)="trueFalseAnswer = true" [class.selected]="trueFalseAnswer === true">True</button>
+    <button (click)="trueFalseAnswer = false" [class.selected]="trueFalseAnswer === false">False</button>
+  </div>
+
+
+  <div *ngIf="currentQuestion.type === 'multipleOne' || currentQuestion.type === 'multipleMore'">
+    <div *ngFor="let c of currentQuestion.choices">
+      <input
+        *ngIf="currentQuestion.type === 'multipleMore'"
+        type="checkbox"
+        [checked]="selectedChoices.includes(c.id)"
+        (change)="toggleChoice(c.id)"
+      />
+      <input
+        *ngIf="currentQuestion.type === 'multipleOne'"
+        type="radio"
+        name="singleChoice"
+        [checked]="selectedChoices.includes(c.id)"
+        (change)="selectedChoices = [c.id]"
+      />
+      {{ c.text }}
+    </div>
+  </div>
+
+  <div class="actions">
+    <button (click)="skipQuestion()">Skip</button>
+    <button (click)="submitAnswer()">Submit</button>
+    <button *ngIf="currentPage < totalQuestions" (click)="finishQuiz()">Finish earlier</button>
+
+  </div>
+</div>
+
+
+<div *ngIf="isFinished" class="quiz-end">
+  <h2>{{ resultMessage }}</h2>
+
+  
+  <table class="answers-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Question</th>
+        <th>Your answer</th>
+        <th>Correct answer</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of answers; let i = index">
+        <td>{{ (answersPage - 1) * answersPageSize + i + 1 }}</td>
+        <td>{{ a.questionText }}</td>
+
+
+        <td>
+          <ng-container [ngSwitch]="a.questionType">
+            <span *ngSwitchCase="'fillBlank'">{{ a.userTextAnswer }}</span>
+            <span *ngSwitchCase="'trueFalse'">{{ a.correct }}</span>
+            <span *ngSwitchDefault>
+              <div *ngFor="let c of a.choices">
+                <span *ngIf="a.userChoiceIds.includes(c.id)">{{ c.text }}</span>
+              </div>
+            </span>
+          </ng-container>
+        </td>
+
+
+        <td>
+          <ng-container [ngSwitch]="a.questionType">
+            <span *ngSwitchCase="'fillBlank'">{{ a.correctTextAnswer }}</span>
+            <span *ngSwitchCase="'trueFalse'">{{ a.correctTrueFalse }}</span>
+            <span *ngSwitchDefault>
+              <div *ngFor="let c of a.choices">
+                <span *ngIf="c.isCorrect">{{ c.text }}</span>
+              </div>
+            </span>
+          </ng-container>
+        </td>
+
+
+        <td [ngClass]="{ correct: a.isCorrect, wrong: !a.isCorrect }">
+          {{ a.isCorrect ? '✅' : '❌' }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="pagination">
+    <button [disabled]="answersPage === 1" (click)="loadAttemptAnswers(answersPage - 1)">Previous</button>
+    <span>Page {{ answersPage }} of {{ totalPages }}</span>
+    <button [disabled]="answersPage * answersPageSize >= totalAnswers" (click)="loadAttemptAnswers(answersPage + 1)">Next</button>
+  </div>
+
+
+<div class="post-quiz-actions" style="margin-top: 20px; display: flex; gap: 10px; justify-content: center;">
+  <button routerLink="/user/home">Home</button>
+  <button routerLink="/user/results">My results</button>
+</div>
+
+</div>

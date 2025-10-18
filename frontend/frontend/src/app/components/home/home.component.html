@@ -1,0 +1,21 @@
+<div class="home-container">
+  <header class="home-header">
+    <h1>My Quiz App</h1>
+    <div class="header-buttons">
+      <button mat-raised-button color="primary" routerLink="/register">
+        Register
+      </button>
+
+      <button mat-raised-button color="accent" (click)="logout()" *ngIf="isLoggedIn">
+        Logout
+      </button>
+    </div>
+  </header>
+
+  <main class="home-content">
+    <div class="quiz-card">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+

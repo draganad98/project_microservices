@@ -1,0 +1,79 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.login-field {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.login-field .mat-form-field-label {
+  color: black !important;
+}
+
+.login-field .mat-input-element {
+  color: black;
+}
+
+.login-field.mat-focused .mat-form-field-outline {
+  color: white;
+  border-color: white;
+}
+
+.login-button {
+  width: 100%;
+  font-weight: bold;
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.preview-img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.login-field .mat-form-field-suffix .mat-icon-button {
+  padding: 6px;
+}
+
+.login-field .mat-form-field-suffix .mat-icon-button .mat-icon {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.login-field.mat-focused .mat-form-field-suffix .mat-icon-button .mat-icon {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background-color: #e74c3c; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+

@@ -1,0 +1,25 @@
+.admin-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-buttons {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
