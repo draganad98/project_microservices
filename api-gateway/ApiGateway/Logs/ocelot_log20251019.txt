@@ -2312,3 +2312,369 @@ No authorization needed for upstream path: /quiz/{everything}
 [2025-10-19 19:20:56 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/5 - 200 null application/json; charset=utf-8 46.3618ms
 [2025-10-19 19:20:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/5, Response status code: 200
 [2025-10-19 19:21:14 INF] Application is shutting down...
+[2025-10-19 21:26:00 WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+[2025-10-19 21:26:00 INF] Now listening on: http://localhost:5000
+[2025-10-19 21:26:00 INF] Now listening on: https://localhost:5001
+[2025-10-19 21:26:00 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-19 21:26:00 INF] Hosting environment: Development
+[2025-10-19 21:26:00 INF] Content root path: C:\Users\Lenovo\Desktop\projectmicroservices\api-gateway\ApiGateway
+[2025-10-19 21:26:25 INF] Application is shutting down...
+[2025-10-19 21:26:59 WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+[2025-10-19 21:26:59 INF] Now listening on: http://localhost:5000
+[2025-10-19 21:26:59 INF] Now listening on: https://localhost:5001
+[2025-10-19 21:26:59 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-19 21:26:59 INF] Hosting environment: Development
+[2025-10-19 21:26:59 INF] Content root path: C:\Users\Lenovo\Desktop\projectmicroservices\api-gateway\ApiGateway
+[2025-10-19 21:27:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - null null
+[2025-10-19 21:27:14 INF] CORS policy execution successful.
+[2025-10-19 21:27:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - 204 null null 34.7878ms
+[2025-10-19 21:27:14 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/authentication - application/json 49
+[2025-10-19 21:27:14 INF] CORS policy execution successful.
+[2025-10-19 21:27:14 INF] RequestId: 0HNGF8M104M0D:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-19 21:27:14 INF] RequestId: 0HNGF8M104M0D:00000002, PreviousRequestId: -
+No authentication needed for path: /users/authentication
+[2025-10-19 21:27:14 INF] RequestId: 0HNGF8M104M0D:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-19 21:27:16 INF] RequestId: 0HNGF8M104M0D:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/authentication
+[2025-10-19 21:27:16 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/authentication - 200 null text/plain; charset=utf-8 2420.5228ms
+[2025-10-19 21:27:16 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/authentication, Response status code: 200
+[2025-10-19 21:27:22 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:27:22 INF] CORS policy execution successful.
+[2025-10-19 21:27:22 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 204 null null 8.1589ms
+[2025-10-19 21:27:22 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:27:22 INF] CORS policy execution successful.
+[2025-10-19 21:27:22 INF] RequestId: 0HNGF8M104M0D:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:22 INF] RequestId: 0HNGF8M104M0D:00000004, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-19 21:27:22 INF] RequestId: 0HNGF8M104M0D:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:25 INF] RequestId: 0HNGF8M104M0D:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=7&page=1&pageSize=5
+[2025-10-19 21:27:25 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 200 null application/json; charset=utf-8 2658.7063ms
+[2025-10-19 21:27:25 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-19 21:27:27 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/10/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:27:27 INF] CORS policy execution successful.
+[2025-10-19 21:27:27 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/10/answers?page=1&pageSize=5 - 204 null null 6.6177ms
+[2025-10-19 21:27:27 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/10/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:27:27 INF] CORS policy execution successful.
+[2025-10-19 21:27:27 INF] RequestId: 0HNGF8M104M0D:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:27 INF] RequestId: 0HNGF8M104M0D:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/10/answers
+[2025-10-19 21:27:27 INF] RequestId: 0HNGF8M104M0D:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:28 INF] RequestId: 0HNGF8M104M0D:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/10/answers?page=1&pageSize=5
+[2025-10-19 21:27:28 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/10/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 326.6233ms
+[2025-10-19 21:27:28 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/10/answers, Response status code: 200
+[2025-10-19 21:27:28 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/5/user-attempts/7 - null null
+[2025-10-19 21:27:28 INF] CORS policy execution successful.
+[2025-10-19 21:27:28 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/5/user-attempts/7 - 204 null null 5.8189ms
+[2025-10-19 21:27:28 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/5/user-attempts/7 - null null
+[2025-10-19 21:27:28 INF] CORS policy execution successful.
+[2025-10-19 21:27:28 INF] RequestId: 0HNGF8M104M0D:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:28 INF] RequestId: 0HNGF8M104M0D:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/5/user-attempts/7
+[2025-10-19 21:27:28 INF] RequestId: 0HNGF8M104M0D:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:28 INF] RequestId: 0HNGF8M104M0D:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/5/user-attempts/7
+[2025-10-19 21:27:28 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/5/user-attempts/7 - 200 null application/json; charset=utf-8 134.1503ms
+[2025-10-19 21:27:28 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/5/user-attempts/7, Response status code: 200
+[2025-10-19 21:27:30 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:27:30 INF] CORS policy execution successful.
+[2025-10-19 21:27:30 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 204 null null 9.0699ms
+[2025-10-19 21:27:30 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:27:30 INF] CORS policy execution successful.
+[2025-10-19 21:27:30 INF] RequestId: 0HNGF8M104M0D:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:30 INF] RequestId: 0HNGF8M104M0D:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-19 21:27:30 INF] RequestId: 0HNGF8M104M0D:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:31 INF] RequestId: 0HNGF8M104M0D:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=7&page=1&pageSize=5
+[2025-10-19 21:27:31 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 200 null application/json; charset=utf-8 29.0118ms
+[2025-10-19 21:27:31 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-19 21:27:34 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/13/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:27:34 INF] CORS policy execution successful.
+[2025-10-19 21:27:34 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/13/answers?page=1&pageSize=5 - 204 null null 10.5522ms
+[2025-10-19 21:27:34 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/13/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:27:34 INF] CORS policy execution successful.
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000C, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/13/answers
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/13/answers?page=1&pageSize=5
+[2025-10-19 21:27:34 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/13/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 88.5733ms
+[2025-10-19 21:27:34 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/13/answers, Response status code: 200
+[2025-10-19 21:27:34 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:27:34 INF] CORS policy execution successful.
+[2025-10-19 21:27:34 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/7 - 204 null null 4.9981ms
+[2025-10-19 21:27:34 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:27:34 INF] CORS policy execution successful.
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000E, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000E, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/7
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000E, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:34 INF] RequestId: 0HNGF8M104M0D:0000000E, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/7
+[2025-10-19 21:27:34 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - 200 null application/json; charset=utf-8 21.7686ms
+[2025-10-19 21:27:34 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/7, Response status code: 200
+[2025-10-19 21:27:36 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/13/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:27:36 INF] CORS policy execution successful.
+[2025-10-19 21:27:36 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/13/answers?page=2&pageSize=5 - 204 null null 17.8955ms
+[2025-10-19 21:27:36 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/13/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:27:36 INF] CORS policy execution successful.
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000010, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000010, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/13/answers
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000010, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000010, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/13/answers?page=2&pageSize=5
+[2025-10-19 21:27:36 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/13/answers?page=2&pageSize=5 - 200 null application/json; charset=utf-8 40.515ms
+[2025-10-19 21:27:36 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/13/answers, Response status code: 200
+[2025-10-19 21:27:36 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:27:36 INF] CORS policy execution successful.
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000011, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000011, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/7
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000011, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:27:36 INF] RequestId: 0HNGF8M104M0D:00000011, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/7
+[2025-10-19 21:27:36 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - 200 null application/json; charset=utf-8 28.5575ms
+[2025-10-19 21:27:36 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/7, Response status code: 200
+[2025-10-19 21:29:06 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - null null
+[2025-10-19 21:29:06 INF] CORS policy execution successful.
+[2025-10-19 21:29:06 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - 204 null null 12.5491ms
+[2025-10-19 21:29:06 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/authentication - application/json 49
+[2025-10-19 21:29:06 INF] CORS policy execution successful.
+[2025-10-19 21:29:06 INF] RequestId: 0HNGF8M104M0E:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-19 21:29:06 INF] RequestId: 0HNGF8M104M0E:00000002, PreviousRequestId: -
+No authentication needed for path: /users/authentication
+[2025-10-19 21:29:06 INF] RequestId: 0HNGF8M104M0E:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-19 21:29:07 INF] RequestId: 0HNGF8M104M0E:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/authentication
+[2025-10-19 21:29:07 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/authentication - 200 null text/plain; charset=utf-8 174.1283ms
+[2025-10-19 21:29:07 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/authentication, Response status code: 200
+[2025-10-19 21:29:08 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:29:08 INF] CORS policy execution successful.
+[2025-10-19 21:29:08 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 204 null null 6.4889ms
+[2025-10-19 21:29:08 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:29:08 INF] CORS policy execution successful.
+[2025-10-19 21:29:08 INF] RequestId: 0HNGF8M104M0E:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:08 INF] RequestId: 0HNGF8M104M0E:00000004, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-19 21:29:08 INF] RequestId: 0HNGF8M104M0E:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:08 INF] RequestId: 0HNGF8M104M0E:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=7&page=1&pageSize=5
+[2025-10-19 21:29:08 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 200 null application/json; charset=utf-8 20.0253ms
+[2025-10-19 21:29:08 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-19 21:29:10 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/12/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:29:10 INF] CORS policy execution successful.
+[2025-10-19 21:29:10 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/12/answers?page=1&pageSize=5 - 204 null null 13.822ms
+[2025-10-19 21:29:10 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/12/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:29:10 INF] CORS policy execution successful.
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/12/answers
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/12/answers?page=1&pageSize=5
+[2025-10-19 21:29:10 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/12/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 43.1543ms
+[2025-10-19 21:29:10 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/12/answers, Response status code: 200
+[2025-10-19 21:29:10 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:29:10 INF] CORS policy execution successful.
+[2025-10-19 21:29:10 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/7 - 204 null null 4.5881ms
+[2025-10-19 21:29:10 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:29:10 INF] CORS policy execution successful.
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/7
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:10 INF] RequestId: 0HNGF8M104M0E:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/7
+[2025-10-19 21:29:10 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - 200 null application/json; charset=utf-8 16.8224ms
+[2025-10-19 21:29:10 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/7, Response status code: 200
+[2025-10-19 21:29:13 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/12/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:29:13 INF] CORS policy execution successful.
+[2025-10-19 21:29:13 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/12/answers?page=2&pageSize=5 - 204 null null 15.5759ms
+[2025-10-19 21:29:13 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/12/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:29:13 INF] CORS policy execution successful.
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/12/answers
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/12/answers?page=2&pageSize=5
+[2025-10-19 21:29:13 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/12/answers?page=2&pageSize=5 - 200 null application/json; charset=utf-8 22.6119ms
+[2025-10-19 21:29:13 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/12/answers, Response status code: 200
+[2025-10-19 21:29:13 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - null null
+[2025-10-19 21:29:13 INF] CORS policy execution successful.
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000B, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000B, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/7
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000B, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:13 INF] RequestId: 0HNGF8M104M0E:0000000B, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/7
+[2025-10-19 21:29:13 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/7 - 200 null application/json; charset=utf-8 12.028ms
+[2025-10-19 21:29:13 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/7, Response status code: 200
+[2025-10-19 21:29:16 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:29:16 INF] CORS policy execution successful.
+[2025-10-19 21:29:16 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 204 null null 8.8712ms
+[2025-10-19 21:29:16 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - null null
+[2025-10-19 21:29:16 INF] CORS policy execution successful.
+[2025-10-19 21:29:16 INF] RequestId: 0HNGF8M104M0E:0000000D, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:29:16 INF] RequestId: 0HNGF8M104M0E:0000000D, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-19 21:29:16 INF] RequestId: 0HNGF8M104M0E:0000000D, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:29:16 INF] RequestId: 0HNGF8M104M0E:0000000D, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=7&page=1&pageSize=5
+[2025-10-19 21:29:16 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=7&page=1&pageSize=5 - 200 null application/json; charset=utf-8 19.453ms
+[2025-10-19 21:29:16 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-19 21:29:54 INF] Application is shutting down...
+[2025-10-19 21:37:05 WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+[2025-10-19 21:37:05 INF] Now listening on: http://localhost:5000
+[2025-10-19 21:37:05 INF] Now listening on: https://localhost:5001
+[2025-10-19 21:37:05 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-19 21:37:05 INF] Hosting environment: Development
+[2025-10-19 21:37:05 INF] Content root path: C:\Users\Lenovo\Desktop\projectmicroservices\api-gateway\ApiGateway
+[2025-10-19 21:37:23 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - null null
+[2025-10-19 21:37:23 INF] CORS policy execution successful.
+[2025-10-19 21:37:23 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - 204 null null 33.6364ms
+[2025-10-19 21:37:23 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/authentication - application/json 48
+[2025-10-19 21:37:23 INF] CORS policy execution successful.
+[2025-10-19 21:37:23 INF] RequestId: 0HNGF8RMI9AN2:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-19 21:37:23 INF] RequestId: 0HNGF8RMI9AN2:00000002, PreviousRequestId: -
+No authentication needed for path: /users/authentication
+[2025-10-19 21:37:23 INF] RequestId: 0HNGF8RMI9AN2:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-19 21:37:25 INF] RequestId: 0HNGF8RMI9AN2:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/authentication
+[2025-10-19 21:37:26 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/authentication - 200 null text/plain; charset=utf-8 2477.4502ms
+[2025-10-19 21:37:26 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/authentication, Response status code: 200
+[2025-10-19 21:37:27 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=6&page=1&pageSize=5 - null null
+[2025-10-19 21:37:27 INF] CORS policy execution successful.
+[2025-10-19 21:37:27 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=6&page=1&pageSize=5 - 204 null null 8.0168ms
+[2025-10-19 21:37:27 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=6&page=1&pageSize=5 - null null
+[2025-10-19 21:37:27 INF] CORS policy execution successful.
+[2025-10-19 21:37:27 INF] RequestId: 0HNGF8RMI9AN2:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:27 INF] RequestId: 0HNGF8RMI9AN2:00000004, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-19 21:37:27 INF] RequestId: 0HNGF8RMI9AN2:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:29 INF] RequestId: 0HNGF8RMI9AN2:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=6&page=1&pageSize=5
+[2025-10-19 21:37:29 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=6&page=1&pageSize=5 - 200 null application/json; charset=utf-8 1672.2862ms
+[2025-10-19 21:37:29 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-19 21:37:34 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:37:34 INF] CORS policy execution successful.
+[2025-10-19 21:37:34 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - 204 null null 7.379ms
+[2025-10-19 21:37:34 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:37:34 INF] CORS policy execution successful.
+[2025-10-19 21:37:34 INF] RequestId: 0HNGF8RMI9AN2:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:34 INF] RequestId: 0HNGF8RMI9AN2:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/14/answers
+[2025-10-19 21:37:34 INF] RequestId: 0HNGF8RMI9AN2:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:35 INF] RequestId: 0HNGF8RMI9AN2:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/14/answers?page=1&pageSize=5
+[2025-10-19 21:37:35 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 424.0253ms
+[2025-10-19 21:37:35 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/14/answers, Response status code: 200
+[2025-10-19 21:37:35 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/6 - null null
+[2025-10-19 21:37:35 INF] CORS policy execution successful.
+[2025-10-19 21:37:35 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/1/user-attempts/6 - 204 null null 4.916ms
+[2025-10-19 21:37:35 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - null null
+[2025-10-19 21:37:35 INF] CORS policy execution successful.
+[2025-10-19 21:37:35 INF] RequestId: 0HNGF8RMI9AN2:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:35 INF] RequestId: 0HNGF8RMI9AN2:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:35 INF] RequestId: 0HNGF8RMI9AN2:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:35 INF] RequestId: 0HNGF8RMI9AN2:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:35 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - 200 null application/json; charset=utf-8 186.5848ms
+[2025-10-19 21:37:35 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/6, Response status code: 200
+[2025-10-19 21:37:37 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/14/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:37:37 INF] CORS policy execution successful.
+[2025-10-19 21:37:37 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/14/answers?page=2&pageSize=5 - 204 null null 6.9982ms
+[2025-10-19 21:37:37 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=2&pageSize=5 - null null
+[2025-10-19 21:37:37 INF] CORS policy execution successful.
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/14/answers
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/14/answers?page=2&pageSize=5
+[2025-10-19 21:37:37 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=2&pageSize=5 - 200 null application/json; charset=utf-8 41.4335ms
+[2025-10-19 21:37:37 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/14/answers, Response status code: 200
+[2025-10-19 21:37:37 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - null null
+[2025-10-19 21:37:37 INF] CORS policy execution successful.
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000B, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000B, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000B, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:37 INF] RequestId: 0HNGF8RMI9AN2:0000000B, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:37 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - 200 null application/json; charset=utf-8 21.7566ms
+[2025-10-19 21:37:37 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/6, Response status code: 200
+[2025-10-19 21:37:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - null null
+[2025-10-19 21:37:38 INF] CORS policy execution successful.
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000C, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/14/answers
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/14/answers?page=1&pageSize=5
+[2025-10-19 21:37:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/14/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 31.1974ms
+[2025-10-19 21:37:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/14/answers, Response status code: 200
+[2025-10-19 21:37:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - null null
+[2025-10-19 21:37:38 INF] CORS policy execution successful.
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000D, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000D, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000D, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-19 21:37:38 INF] RequestId: 0HNGF8RMI9AN2:0000000D, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/1/user-attempts/6
+[2025-10-19 21:37:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/1/user-attempts/6 - 200 null application/json; charset=utf-8 18.6356ms
+[2025-10-19 21:37:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/1/user-attempts/6, Response status code: 200
+[2025-10-19 21:38:04 INF] Application is shutting down...

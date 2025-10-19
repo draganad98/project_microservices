@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { RegisterUser } from '../models/reqister.model';
 import { LoginUser } from '../models/login.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  private apiUrl = 'http://localhost:5000/users'; 
+  private apiUrl = `${environment.apiUrl}/users`; 
 
   constructor(private http: HttpClient) { }
 

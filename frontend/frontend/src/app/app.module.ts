@@ -35,7 +35,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { StartQuizComponent } from './components/start-quiz/start-quiz.component';
 import { ResultDetailsComponent } from './components/result-details/result-details.component';
-import { ProgressGraphComponent } from './components/progress-graph/progress-graph.component';
+
 
 
 
@@ -55,8 +55,7 @@ import { ProgressGraphComponent } from './components/progress-graph/progress-gra
     UserHomeComponent,
     MyQuizzesComponent,
     StartQuizComponent,
-    ResultDetailsComponent,
-    ProgressGraphComponent
+    ResultDetailsComponent
   ],
   imports: [
     HttpClientModule,

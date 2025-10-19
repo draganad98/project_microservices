@@ -10,12 +10,14 @@ import { UpdateQuiz } from '../models/update-quiz.model';
 import { QuizDetailsDTO, QuestionFullDTO } from '../models/quiz-details.model';
 import { CreateAttempt, AttemptResponse, CreateUserAnswer } from '../models/attempt.model';
 import { AttemptRankingDTO } from '../models/attempt.model';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
  
-  private apiUrl = 'http://localhost:5000/quiz'; 
+  private apiUrl = `${environment.apiUrl}/quiz`; 
 
   constructor(private http: HttpClient) {}
 

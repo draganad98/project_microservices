@@ -1,0 +1,1178 @@
+[2025-10-20 00:51:55 WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+[2025-10-20 00:51:55 INF] Now listening on: http://localhost:5000
+[2025-10-20 00:51:55 INF] Now listening on: https://localhost:5001
+[2025-10-20 00:51:55 INF] Application started. Press Ctrl+C to shut down.
+[2025-10-20 00:51:55 INF] Hosting environment: Development
+[2025-10-20 00:51:55 INF] Content root path: C:\Users\Lenovo\Desktop\projectmicroservices\api-gateway\ApiGateway
+[2025-10-20 00:52:42 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/register - multipart/form-data; boundary=----WebKitFormBoundaryWpbCu1AgEhjmdqY2 339
+[2025-10-20 00:52:42 INF] CORS policy execution successful.
+[2025-10-20 00:52:42 INF] RequestId: 0HNGFC8R1CHJ7:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:52:42 INF] RequestId: 0HNGFC8R1CHJ7:00000001, PreviousRequestId: -
+No authentication needed for path: /users/register
+[2025-10-20 00:52:42 INF] RequestId: 0HNGFC8R1CHJ7:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:52:44 WRN] RequestId: 0HNGFC8R1CHJ7:00000001, PreviousRequestId: -
+400 Bad Request status code of request URI: http://localhost:5287/api/users/register
+[2025-10-20 00:52:44 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/register - 400 null text/plain; charset=utf-8 2113.6339ms
+[2025-10-20 00:52:44 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/register, Response status code: 400
+[2025-10-20 00:53:29 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/register - multipart/form-data; boundary=----WebKitFormBoundaryk10fhU1RlRgjQCfH 351
+[2025-10-20 00:53:29 INF] CORS policy execution successful.
+[2025-10-20 00:53:29 INF] RequestId: 0HNGFC8R1CHJ7:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:53:29 INF] RequestId: 0HNGFC8R1CHJ7:00000002, PreviousRequestId: -
+No authentication needed for path: /users/register
+[2025-10-20 00:53:29 INF] RequestId: 0HNGFC8R1CHJ7:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:53:30 INF] RequestId: 0HNGFC8R1CHJ7:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/register
+[2025-10-20 00:53:30 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/register - 200 0 null 540.4424ms
+[2025-10-20 00:53:30 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/register, Response status code: 200
+[2025-10-20 00:53:39 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - null null
+[2025-10-20 00:53:39 INF] CORS policy execution successful.
+[2025-10-20 00:53:39 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - 204 null null 13.1028ms
+[2025-10-20 00:53:39 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/authentication - application/json 50
+[2025-10-20 00:53:39 INF] CORS policy execution successful.
+[2025-10-20 00:53:39 INF] RequestId: 0HNGFC8R1CHJ7:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:53:39 INF] RequestId: 0HNGFC8R1CHJ7:00000004, PreviousRequestId: -
+No authentication needed for path: /users/authentication
+[2025-10-20 00:53:39 INF] RequestId: 0HNGFC8R1CHJ7:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:53:40 INF] RequestId: 0HNGFC8R1CHJ7:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/authentication
+[2025-10-20 00:53:40 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/authentication - 200 null text/plain; charset=utf-8 519.7426ms
+[2025-10-20 00:53:40 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/authentication, Response status code: 200
+[2025-10-20 00:53:42 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:53:42 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:53:42 INF] CORS policy execution successful.
+[2025-10-20 00:53:42 INF] CORS policy execution successful.
+[2025-10-20 00:53:42 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - 204 null null 11.2169ms
+[2025-10-20 00:53:42 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 204 null null 11.052ms
+[2025-10-20 00:53:42 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:53:42 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:53:42 INF] CORS policy execution successful.
+[2025-10-20 00:53:42 INF] CORS policy execution successful.
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ7:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ8:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ7:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ8:00000002, PreviousRequestId: -
+No authentication needed for path: /quiz/categories
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ7:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:53:42 INF] RequestId: 0HNGFC8R1CHJ8:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:53:44 INF] RequestId: 0HNGFC8R1CHJ8:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/categories
+[2025-10-20 00:53:44 INF] RequestId: 0HNGFC8R1CHJ7:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5
+[2025-10-20 00:53:44 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 200 null application/json; charset=utf-8 2323.8461ms
+[2025-10-20 00:53:44 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/categories - 200 null application/json; charset=utf-8 2320.5916ms
+[2025-10-20 00:53:44 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:53:44 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/categories, Response status code: 200
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/details - null null
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/details - 204 null null 6.6988ms
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/3/details - null null
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/3/details
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/3/details
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/3/details - 200 null application/json; charset=utf-8 385.7314ms
+[2025-10-20 00:53:55 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/3/details, Response status code: 200
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt - null null
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt - 204 null null 5.3195ms
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/attempt - application/json 105
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/attempt - 200 null application/json; charset=utf-8 252.1614ms
+[2025-10-20 00:53:55 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/attempt, Response status code: 200
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=1 - null null
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=1 - 204 null null 6.088ms
+[2025-10-20 00:53:55 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=1 - null null
+[2025-10-20 00:53:55 INF] CORS policy execution successful.
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000C, PreviousRequestId: -
+No authentication needed for path: /quiz/3/question
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:53:55 INF] RequestId: 0HNGFC8R1CHJ7:0000000C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/3/question?page=1
+[2025-10-20 00:53:55 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=1 - 200 null application/json; charset=utf-8 65.6343ms
+[2025-10-20 00:53:55 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/3/question, Response status code: 200
+[2025-10-20 00:54:04 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/answer - null null
+[2025-10-20 00:54:04 INF] CORS policy execution successful.
+[2025-10-20 00:54:04 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/answer - 204 null null 17.7241ms
+[2025-10-20 00:54:04 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/answer - application/json 66
+[2025-10-20 00:54:04 INF] CORS policy execution successful.
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:0000000E, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:0000000E, PreviousRequestId: -
+No authentication needed for path: /quiz/answer
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:0000000E, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:0000000E, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/answer
+[2025-10-20 00:54:04 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/answer - 200 0 null 107.8511ms
+[2025-10-20 00:54:04 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/answer, Response status code: 200
+[2025-10-20 00:54:04 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=2 - null null
+[2025-10-20 00:54:04 INF] CORS policy execution successful.
+[2025-10-20 00:54:04 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=2 - 204 null null 7.0734ms
+[2025-10-20 00:54:04 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=2 - null null
+[2025-10-20 00:54:04 INF] CORS policy execution successful.
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:00000010, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:00000010, PreviousRequestId: -
+No authentication needed for path: /quiz/3/question
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:00000010, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:04 INF] RequestId: 0HNGFC8R1CHJ7:00000010, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/3/question?page=2
+[2025-10-20 00:54:04 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=2 - 200 null application/json; charset=utf-8 15.8051ms
+[2025-10-20 00:54:04 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/3/question, Response status code: 200
+[2025-10-20 00:54:09 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/answer - application/json 63
+[2025-10-20 00:54:09 INF] CORS policy execution successful.
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000011, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000011, PreviousRequestId: -
+No authentication needed for path: /quiz/answer
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000011, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000011, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/answer
+[2025-10-20 00:54:09 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/answer - 200 0 null 52.4638ms
+[2025-10-20 00:54:09 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/answer, Response status code: 200
+[2025-10-20 00:54:09 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=3 - null null
+[2025-10-20 00:54:09 INF] CORS policy execution successful.
+[2025-10-20 00:54:09 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=3 - 204 null null 7.6914ms
+[2025-10-20 00:54:09 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=3 - null null
+[2025-10-20 00:54:09 INF] CORS policy execution successful.
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000013, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000013, PreviousRequestId: -
+No authentication needed for path: /quiz/3/question
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000013, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:09 INF] RequestId: 0HNGFC8R1CHJ7:00000013, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/3/question?page=3
+[2025-10-20 00:54:09 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=3 - 200 null application/json; charset=utf-8 17.116ms
+[2025-10-20 00:54:09 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/3/question, Response status code: 200
+[2025-10-20 00:54:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/answer - null null
+[2025-10-20 00:54:14 INF] CORS policy execution successful.
+[2025-10-20 00:54:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/answer - 204 null null 5.493ms
+[2025-10-20 00:54:14 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/answer - application/json 49
+[2025-10-20 00:54:14 INF] CORS policy execution successful.
+[2025-10-20 00:54:14 INF] RequestId: 0HNGFC8R1CHJ7:00000015, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:14 INF] RequestId: 0HNGFC8R1CHJ7:00000015, PreviousRequestId: -
+No authentication needed for path: /quiz/answer
+[2025-10-20 00:54:14 INF] RequestId: 0HNGFC8R1CHJ7:00000015, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:14 INF] RequestId: 0HNGFC8R1CHJ7:00000015, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/answer
+[2025-10-20 00:54:14 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/answer - 200 0 null 55.3221ms
+[2025-10-20 00:54:14 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/answer, Response status code: 200
+[2025-10-20 00:54:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=4 - null null
+[2025-10-20 00:54:14 INF] CORS policy execution successful.
+[2025-10-20 00:54:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/3/question?page=4 - 204 null null 6.2068ms
+[2025-10-20 00:54:14 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=4 - null null
+[2025-10-20 00:54:14 INF] CORS policy execution successful.
+[2025-10-20 00:54:14 INF] RequestId: 0HNGFC8R1CHJ7:00000017, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000017, PreviousRequestId: -
+No authentication needed for path: /quiz/3/question
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000017, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:15 WRN] RequestId: 0HNGFC8R1CHJ7:00000017, PreviousRequestId: -
+404 Not Found status code of request URI: http://localhost:5127/api/quiz/3/question?page=4
+[2025-10-20 00:54:15 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/3/question?page=4 - 404 null text/plain; charset=utf-8 17.6114ms
+[2025-10-20 00:54:15 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/3/question, Response status code: 404
+[2025-10-20 00:54:15 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/finish/20 - null null
+[2025-10-20 00:54:15 INF] CORS policy execution successful.
+[2025-10-20 00:54:15 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/finish/20 - 204 null null 4.2504ms
+[2025-10-20 00:54:15 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/finish/20 - application/json 2
+[2025-10-20 00:54:15 INF] CORS policy execution successful.
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000019, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000019, PreviousRequestId: -
+No authentication needed for path: /quiz/finish/20
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000019, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:00000019, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/finish/20
+[2025-10-20 00:54:15 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/finish/20 - 200 null application/json; charset=utf-8 278.6303ms
+[2025-10-20 00:54:15 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/finish/20, Response status code: 200
+[2025-10-20 00:54:15 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - null null
+[2025-10-20 00:54:15 INF] CORS policy execution successful.
+[2025-10-20 00:54:15 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - 204 null null 5.6254ms
+[2025-10-20 00:54:15 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - null null
+[2025-10-20 00:54:15 INF] CORS policy execution successful.
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:0000001B, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:0000001B, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/20/answers
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:0000001B, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:15 INF] RequestId: 0HNGFC8R1CHJ7:0000001B, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/20/answers?page=1&pageSize=5
+[2025-10-20 00:54:15 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 62.396ms
+[2025-10-20 00:54:15 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/20/answers, Response status code: 200
+[2025-10-20 00:54:18 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - null null
+[2025-10-20 00:54:18 INF] CORS policy execution successful.
+[2025-10-20 00:54:18 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - 204 null null 8.1705ms
+[2025-10-20 00:54:18 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - null null
+[2025-10-20 00:54:18 INF] CORS policy execution successful.
+[2025-10-20 00:54:18 INF] RequestId: 0HNGFC8R1CHJ7:0000001D, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:18 INF] RequestId: 0HNGFC8R1CHJ7:0000001D, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-20 00:54:18 INF] RequestId: 0HNGFC8R1CHJ7:0000001D, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:18 INF] RequestId: 0HNGFC8R1CHJ7:0000001D, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=11&page=1&pageSize=5
+[2025-10-20 00:54:18 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - 200 null application/json; charset=utf-8 48.0111ms
+[2025-10-20 00:54:18 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-20 00:54:20 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - null null
+[2025-10-20 00:54:20 INF] CORS policy execution successful.
+[2025-10-20 00:54:20 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - 204 null null 7.6439ms
+[2025-10-20 00:54:20 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - null null
+[2025-10-20 00:54:20 INF] CORS policy execution successful.
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:0000001F, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:0000001F, PreviousRequestId: -
+No authentication needed for path: /quiz/attempt/20/answers
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:0000001F, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:0000001F, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/attempt/20/answers?page=1&pageSize=5
+[2025-10-20 00:54:20 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/attempt/20/answers?page=1&pageSize=5 - 200 null application/json; charset=utf-8 28.8098ms
+[2025-10-20 00:54:20 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/attempt/20/answers, Response status code: 200
+[2025-10-20 00:54:20 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/3/user-attempts/11 - null null
+[2025-10-20 00:54:20 INF] CORS policy execution successful.
+[2025-10-20 00:54:20 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quiz/3/user-attempts/11 - 204 null null 4.6466ms
+[2025-10-20 00:54:20 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quiz/3/user-attempts/11 - null null
+[2025-10-20 00:54:20 INF] CORS policy execution successful.
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:00000021, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:00000021, PreviousRequestId: -
+No authentication needed for path: /quiz/quiz/3/user-attempts/11
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:00000021, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:20 INF] RequestId: 0HNGFC8R1CHJ7:00000021, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quiz/3/user-attempts/11
+[2025-10-20 00:54:20 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quiz/3/user-attempts/11 - 200 null application/json; charset=utf-8 40.8158ms
+[2025-10-20 00:54:20 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quiz/3/user-attempts/11, Response status code: 200
+[2025-10-20 00:54:33 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - null null
+[2025-10-20 00:54:33 INF] CORS policy execution successful.
+[2025-10-20 00:54:33 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - 204 null null 8.6886ms
+[2025-10-20 00:54:33 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - null null
+[2025-10-20 00:54:33 INF] CORS policy execution successful.
+[2025-10-20 00:54:33 INF] RequestId: 0HNGFC8R1CHJ7:00000023, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:33 INF] RequestId: 0HNGFC8R1CHJ7:00000023, PreviousRequestId: -
+No authentication needed for path: /quiz/myattempts
+[2025-10-20 00:54:33 INF] RequestId: 0HNGFC8R1CHJ7:00000023, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:33 INF] RequestId: 0HNGFC8R1CHJ7:00000023, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/myattempts?userId=11&page=1&pageSize=5
+[2025-10-20 00:54:33 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/myattempts?userId=11&page=1&pageSize=5 - 200 null application/json; charset=utf-8 15.2694ms
+[2025-10-20 00:54:33 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/myattempts, Response status code: 200
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - null null
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:54:38 INF] CORS policy execution successful.
+[2025-10-20 00:54:38 INF] CORS policy execution successful.
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - 204 null null 8.5091ms
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 204 null null 8.6048ms
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/all - null null
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:54:38 INF] CORS policy execution successful.
+[2025-10-20 00:54:38 INF] CORS policy execution successful.
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ7:00000025, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ8:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ7:00000025, PreviousRequestId: -
+No authentication needed for path: /quiz/all
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ8:00000004, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ7:00000025, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ8:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ7:00000025, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/all
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/all - 200 null application/json; charset=utf-8 41.6515ms
+[2025-10-20 00:54:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/all, Response status code: 200
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ9:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ9:00000001, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ9:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ9:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 180.9452ms
+[2025-10-20 00:54:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJ8:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 383.9331ms
+[2025-10-20 00:54:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/uploads/a075a57e-96c3-4606-ad58-4527ccc8a4df.jpg - null null
+[2025-10-20 00:54:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/uploads/62a64ba9-dcf0-4169-9c37-4279358ea406.png - null null
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJA:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /uploads/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJB:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /uploads/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJA:00000001, PreviousRequestId: -
+No authentication needed for path: /uploads/a075a57e-96c3-4606-ad58-4527ccc8a4df.jpg
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJB:00000001, PreviousRequestId: -
+No authentication needed for path: /uploads/62a64ba9-dcf0-4169-9c37-4279358ea406.png
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJA:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /uploads/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJB:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /uploads/{everything}
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJA:00000001, PreviousRequestId: -
+304 Not Modified status code of request URI: http://localhost:5287/uploads/a075a57e-96c3-4606-ad58-4527ccc8a4df.jpg
+[2025-10-20 00:54:38 INF] RequestId: 0HNGFC8R1CHJB:00000001, PreviousRequestId: -
+304 Not Modified status code of request URI: http://localhost:5287/uploads/62a64ba9-dcf0-4169-9c37-4279358ea406.png
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/uploads/a075a57e-96c3-4606-ad58-4527ccc8a4df.jpg - 304 null image/jpeg 28.6087ms
+[2025-10-20 00:54:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/uploads/62a64ba9-dcf0-4169-9c37-4279358ea406.png - 304 null image/png 29.2013ms
+[2025-10-20 00:54:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/uploads/a075a57e-96c3-4606-ad58-4527ccc8a4df.jpg, Response status code: 304
+[2025-10-20 00:54:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/uploads/62a64ba9-dcf0-4169-9c37-4279358ea406.png, Response status code: 304
+[2025-10-20 00:54:42 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 00:54:42 INF] CORS policy execution successful.
+[2025-10-20 00:54:42 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 204 null null 6.5171ms
+[2025-10-20 00:54:42 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 00:54:42 INF] CORS policy execution successful.
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ8:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ8:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ8:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:54:42 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ9:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ9:00000002, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ9:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ9:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:54:42 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 24.4385ms
+[2025-10-20 00:54:42 INF] RequestId: 0HNGFC8R1CHJ8:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3
+[2025-10-20 00:54:42 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:54:42 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 200 null application/json; charset=utf-8 67.9111ms
+[2025-10-20 00:54:42 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:55:44 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - null null
+[2025-10-20 00:55:44 INF] CORS policy execution successful.
+[2025-10-20 00:55:44 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - 204 null null 12.1954ms
+[2025-10-20 00:55:44 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - null null
+[2025-10-20 00:55:44 INF] CORS policy execution successful.
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJ8:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJ8:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJ8:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:55:44 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJC:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJC:00000001, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJC:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJC:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:55:44 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 20.9949ms
+[2025-10-20 00:55:44 INF] RequestId: 0HNGFC8R1CHJ8:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3
+[2025-10-20 00:55:44 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:55:44 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - 200 null application/json; charset=utf-8 72.578ms
+[2025-10-20 00:55:44 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:55:52 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 00:55:52 INF] CORS policy execution successful.
+[2025-10-20 00:55:52 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 204 null null 5.5264ms
+[2025-10-20 00:55:52 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 00:55:52 INF] CORS policy execution successful.
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJ8:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJ8:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJ8:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:55:52 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJC:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJC:00000002, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJC:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJC:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:55:52 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 21.127ms
+[2025-10-20 00:55:52 INF] RequestId: 0HNGFC8R1CHJ8:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3
+[2025-10-20 00:55:52 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:55:52 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 200 null application/json; charset=utf-8 50.2957ms
+[2025-10-20 00:55:52 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:56:07 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - null null
+[2025-10-20 00:56:07 INF] CORS policy execution successful.
+[2025-10-20 00:56:07 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - 204 null null 6.5772ms
+[2025-10-20 00:56:07 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - null null
+[2025-10-20 00:56:07 INF] CORS policy execution successful.
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJ8:0000000C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJ8:0000000C, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJ8:0000000C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:56:07 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJC:00000003, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJC:00000003, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJC:00000003, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJC:00000003, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:56:07 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 18.1044ms
+[2025-10-20 00:56:07 INF] RequestId: 0HNGFC8R1CHJ8:0000000C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3
+[2025-10-20 00:56:07 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:56:07 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - 200 null application/json; charset=utf-8 65.3803ms
+[2025-10-20 00:56:07 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:56:25 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:56:25 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:56:25 INF] CORS policy execution successful.
+[2025-10-20 00:56:25 INF] CORS policy execution successful.
+[2025-10-20 00:56:25 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - 204 null null 8.6838ms
+[2025-10-20 00:56:25 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 204 null null 9.3589ms
+[2025-10-20 00:56:25 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:56:25 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:56:25 INF] CORS policy execution successful.
+[2025-10-20 00:56:25 INF] CORS policy execution successful.
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ8:0000000E, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ7:00000027, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ8:0000000E, PreviousRequestId: -
+No authentication needed for path: /quiz/categories
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ7:00000027, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ8:0000000E, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ7:00000027, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ8:0000000E, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/categories
+[2025-10-20 00:56:25 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/categories - 200 null application/json; charset=utf-8 29.8812ms
+[2025-10-20 00:56:25 INF] RequestId: 0HNGFC8R1CHJ7:00000027, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5
+[2025-10-20 00:56:25 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/categories, Response status code: 200
+[2025-10-20 00:56:25 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 200 null application/json; charset=utf-8 32.4311ms
+[2025-10-20 00:56:25 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:56:30 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=2&pageSize=5 - null null
+[2025-10-20 00:56:30 INF] CORS policy execution successful.
+[2025-10-20 00:56:30 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=2&pageSize=5 - 204 null null 7.8294ms
+[2025-10-20 00:56:30 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=2&pageSize=5 - null null
+[2025-10-20 00:56:30 INF] CORS policy execution successful.
+[2025-10-20 00:56:30 INF] RequestId: 0HNGFC8R1CHJ7:00000029, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:30 INF] RequestId: 0HNGFC8R1CHJ7:00000029, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:30 INF] RequestId: 0HNGFC8R1CHJ7:00000029, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:30 INF] RequestId: 0HNGFC8R1CHJ7:00000029, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=2&pageSize=5
+[2025-10-20 00:56:30 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=2&pageSize=5 - 200 null application/json; charset=utf-8 23.017ms
+[2025-10-20 00:56:30 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:56:32 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:56:32 INF] CORS policy execution successful.
+[2025-10-20 00:56:32 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 204 null null 17.9724ms
+[2025-10-20 00:56:32 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - null null
+[2025-10-20 00:56:32 INF] CORS policy execution successful.
+[2025-10-20 00:56:32 INF] RequestId: 0HNGFC8R1CHJ7:0000002B, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:32 INF] RequestId: 0HNGFC8R1CHJ7:0000002B, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:32 INF] RequestId: 0HNGFC8R1CHJ7:0000002B, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:32 INF] RequestId: 0HNGFC8R1CHJ7:0000002B, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5
+[2025-10-20 00:56:32 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5 - 200 null application/json; charset=utf-8 21.2429ms
+[2025-10-20 00:56:32 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:56:46 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - null null
+[2025-10-20 00:56:46 INF] CORS policy execution successful.
+[2025-10-20 00:56:46 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - 204 null null 7.6638ms
+[2025-10-20 00:56:46 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - null null
+[2025-10-20 00:56:46 INF] CORS policy execution successful.
+[2025-10-20 00:56:46 INF] RequestId: 0HNGFC8R1CHJ7:0000002D, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:46 INF] RequestId: 0HNGFC8R1CHJ7:0000002D, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:46 INF] RequestId: 0HNGFC8R1CHJ7:0000002D, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:46 INF] RequestId: 0HNGFC8R1CHJ7:0000002D, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5&categoryIds=3
+[2025-10-20 00:56:46 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - 200 null application/json; charset=utf-8 25.1699ms
+[2025-10-20 00:56:46 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:56:55 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Medium - null null
+[2025-10-20 00:56:55 INF] CORS policy execution successful.
+[2025-10-20 00:56:55 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Medium - 204 null null 7.1652ms
+[2025-10-20 00:56:55 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Medium - null null
+[2025-10-20 00:56:55 INF] CORS policy execution successful.
+[2025-10-20 00:56:55 INF] RequestId: 0HNGFC8R1CHJ7:0000002F, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:55 INF] RequestId: 0HNGFC8R1CHJ7:0000002F, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:55 INF] RequestId: 0HNGFC8R1CHJ7:0000002F, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:55 INF] RequestId: 0HNGFC8R1CHJ7:0000002F, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Medium
+[2025-10-20 00:56:55 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Medium - 200 null application/json; charset=utf-8 25.011ms
+[2025-10-20 00:56:55 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:56:58 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Hard - null null
+[2025-10-20 00:56:58 INF] CORS policy execution successful.
+[2025-10-20 00:56:58 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Hard - 204 null null 5.7825ms
+[2025-10-20 00:56:58 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Hard - null null
+[2025-10-20 00:56:58 INF] CORS policy execution successful.
+[2025-10-20 00:56:58 INF] RequestId: 0HNGFC8R1CHJ7:00000031, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:56:58 INF] RequestId: 0HNGFC8R1CHJ7:00000031, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:56:58 INF] RequestId: 0HNGFC8R1CHJ7:00000031, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:56:58 INF] RequestId: 0HNGFC8R1CHJ7:00000031, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Hard
+[2025-10-20 00:56:58 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&difficulty=Hard - 200 null application/json; charset=utf-8 16.5549ms
+[2025-10-20 00:56:58 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:57:08 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - null null
+[2025-10-20 00:57:08 INF] CORS policy execution successful.
+[2025-10-20 00:57:08 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - 204 null null 6.6405ms
+[2025-10-20 00:57:08 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - null null
+[2025-10-20 00:57:08 INF] CORS policy execution successful.
+[2025-10-20 00:57:08 INF] RequestId: 0HNGFC8R1CHJ7:00000033, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:57:08 INF] RequestId: 0HNGFC8R1CHJ7:00000033, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:57:08 INF] RequestId: 0HNGFC8R1CHJ7:00000033, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:57:08 INF] RequestId: 0HNGFC8R1CHJ7:00000033, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5&categoryIds=3
+[2025-10-20 00:57:08 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3 - 200 null application/json; charset=utf-8 18.2291ms
+[2025-10-20 00:57:08 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:57:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&keyword=poz - null null
+[2025-10-20 00:57:14 INF] CORS policy execution successful.
+[2025-10-20 00:57:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&keyword=poz - 204 null null 7.5912ms
+[2025-10-20 00:57:14 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&keyword=poz - null null
+[2025-10-20 00:57:14 INF] CORS policy execution successful.
+[2025-10-20 00:57:14 INF] RequestId: 0HNGFC8R1CHJ7:00000035, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/quizzes
+[2025-10-20 00:57:14 INF] RequestId: 0HNGFC8R1CHJ7:00000035, PreviousRequestId: -
+No authentication needed for path: /quiz/quizzes
+[2025-10-20 00:57:14 INF] RequestId: 0HNGFC8R1CHJ7:00000035, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/quizzes
+[2025-10-20 00:57:14 INF] RequestId: 0HNGFC8R1CHJ7:00000035, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/quizzes?page=1&pageSize=5&categoryIds=3&keyword=poz
+[2025-10-20 00:57:14 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/quizzes?page=1&pageSize=5&categoryIds=3&keyword=poz - 200 null application/json; charset=utf-8 21.3446ms
+[2025-10-20 00:57:14 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/quizzes, Response status code: 200
+[2025-10-20 00:57:37 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - null null
+[2025-10-20 00:57:37 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:37 INF] CORS policy execution successful.
+[2025-10-20 00:57:37 INF] CORS policy execution successful.
+[2025-10-20 00:57:37 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - 204 null null 9.042ms
+[2025-10-20 00:57:37 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 204 null null 9.8613ms
+[2025-10-20 00:57:37 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/all - null null
+[2025-10-20 00:57:37 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:37 INF] CORS policy execution successful.
+[2025-10-20 00:57:37 INF] CORS policy execution successful.
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ7:00000037, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ8:00000010, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ7:00000037, PreviousRequestId: -
+No authentication needed for path: /quiz/all
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ8:00000010, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ7:00000037, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ8:00000010, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ7:00000037, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/all
+[2025-10-20 00:57:37 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/all - 200 null application/json; charset=utf-8 32.3324ms
+[2025-10-20 00:57:37 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:57:37 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/all, Response status code: 200
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJD:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJD:00000001, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJD:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJD:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:57:37 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 25.4313ms
+[2025-10-20 00:57:37 INF] RequestId: 0HNGFC8R1CHJ8:00000010, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all
+[2025-10-20 00:57:37 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:57:37 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 71.9521ms
+[2025-10-20 00:57:37 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - 204 null null 8.7796ms
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000012, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000012, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000012, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000001, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 40.5077ms
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000012, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=2&pageSize=5&timeFilter=all
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 79.871ms
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 GET http://localhost:5000/uploads/7e313e9c-bdfd-4fc8-ac37-71b0449dfaf6.jpg - null null
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJF:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /uploads/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJF:00000001, PreviousRequestId: -
+No authentication needed for path: /uploads/7e313e9c-bdfd-4fc8-ac37-71b0449dfaf6.jpg
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJF:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /uploads/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJF:00000001, PreviousRequestId: -
+304 Not Modified status code of request URI: http://localhost:5287/uploads/7e313e9c-bdfd-4fc8-ac37-71b0449dfaf6.jpg
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 GET http://localhost:5000/uploads/7e313e9c-bdfd-4fc8-ac37-71b0449dfaf6.jpg - 304 null image/jpeg 13.928ms
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/uploads/7e313e9c-bdfd-4fc8-ac37-71b0449dfaf6.jpg, Response status code: 304
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - 204 null null 7.2615ms
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000014, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000014, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000014, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000002, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 20.7997ms
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000014, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=3&pageSize=5&timeFilter=all
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 50.5753ms
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=4&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=4&pageSize=5&timeFilter=all - 204 null null 5.1835ms
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=4&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:57:56 INF] CORS policy execution successful.
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000016, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000016, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000016, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:57:56 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000003, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000003, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000003, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJE:00000003, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 23.7046ms
+[2025-10-20 00:57:56 INF] RequestId: 0HNGFC8R1CHJ8:00000016, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=4&pageSize=5&timeFilter=all
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:57:56 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=4&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 50.4162ms
+[2025-10-20 00:57:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:58:02 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:02 INF] CORS policy execution successful.
+[2025-10-20 00:58:02 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - 204 null null 12.347ms
+[2025-10-20 00:58:02 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:02 INF] CORS policy execution successful.
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJ8:00000018, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJ8:00000018, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJ8:00000018, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:58:02 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJE:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJE:00000004, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJE:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJE:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:58:02 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 19.839ms
+[2025-10-20 00:58:02 INF] RequestId: 0HNGFC8R1CHJ8:00000018, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=3&pageSize=5&timeFilter=all
+[2025-10-20 00:58:02 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:58:02 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=3&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 46.9976ms
+[2025-10-20 00:58:02 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:58:04 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:04 INF] CORS policy execution successful.
+[2025-10-20 00:58:04 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - 204 null null 12.3599ms
+[2025-10-20 00:58:04 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:04 INF] CORS policy execution successful.
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJ8:0000001A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJ8:0000001A, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJ8:0000001A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:58:04 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJE:00000005, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJE:00000005, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJE:00000005, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJE:00000005, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:58:04 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 15.1206ms
+[2025-10-20 00:58:04 INF] RequestId: 0HNGFC8R1CHJ8:0000001A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=2&pageSize=5&timeFilter=all
+[2025-10-20 00:58:04 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:58:04 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=2&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 41.5877ms
+[2025-10-20 00:58:04 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:58:05 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:05 INF] CORS policy execution successful.
+[2025-10-20 00:58:05 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 204 null null 9.7467ms
+[2025-10-20 00:58:05 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 00:58:05 INF] CORS policy execution successful.
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJ8:0000001C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJ8:0000001C, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJ8:0000001C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 00:58:05 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJE:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJE:00000006, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJE:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJE:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 00:58:05 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 18.5792ms
+[2025-10-20 00:58:05 INF] RequestId: 0HNGFC8R1CHJ8:0000001C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all
+[2025-10-20 00:58:05 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 00:58:05 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 43.8128ms
+[2025-10-20 00:58:05 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 00:58:21 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - null null
+[2025-10-20 00:58:21 INF] CORS policy execution successful.
+[2025-10-20 00:58:21 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/users/authentication - 204 null null 16.5792ms
+[2025-10-20 00:58:21 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/authentication - application/json 51
+[2025-10-20 00:58:21 INF] CORS policy execution successful.
+[2025-10-20 00:58:21 INF] RequestId: 0HNGFC8R1CHJ8:0000001E, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 00:58:21 INF] RequestId: 0HNGFC8R1CHJ8:0000001E, PreviousRequestId: -
+No authentication needed for path: /users/authentication
+[2025-10-20 00:58:21 INF] RequestId: 0HNGFC8R1CHJ8:0000001E, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 00:58:22 INF] RequestId: 0HNGFC8R1CHJ8:0000001E, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/authentication
+[2025-10-20 00:58:22 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/authentication - 200 null text/plain; charset=utf-8 456.4917ms
+[2025-10-20 00:58:22 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/authentication, Response status code: 200
+[2025-10-20 00:58:24 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 00:58:24 INF] CORS policy execution successful.
+[2025-10-20 00:58:24 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 204 null null 5.5149ms
+[2025-10-20 00:58:24 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 00:58:24 INF] CORS policy execution successful.
+[2025-10-20 00:58:24 INF] RequestId: 0HNGFC8R1CHJ8:00000020, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:58:24 INF] RequestId: 0HNGFC8R1CHJ8:00000020, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/4
+[2025-10-20 00:58:24 INF] RequestId: 0HNGFC8R1CHJ8:00000020, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:58:24 INF] RequestId: 0HNGFC8R1CHJ8:00000020, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/4?page=1&pageSize=5
+[2025-10-20 00:58:24 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 200 null application/json; charset=utf-8 146.106ms
+[2025-10-20 00:58:24 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/admin/4, Response status code: 200
+[2025-10-20 00:58:49 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:58:49 INF] CORS policy execution successful.
+[2025-10-20 00:58:49 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - 204 null null 5.6876ms
+[2025-10-20 00:58:49 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/categories - null null
+[2025-10-20 00:58:49 INF] CORS policy execution successful.
+[2025-10-20 00:58:49 INF] RequestId: 0HNGFC8R1CHJ8:00000022, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 00:58:49 INF] RequestId: 0HNGFC8R1CHJ8:00000022, PreviousRequestId: -
+No authentication needed for path: /quiz/categories
+[2025-10-20 00:58:49 INF] RequestId: 0HNGFC8R1CHJ8:00000022, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 00:58:49 INF] RequestId: 0HNGFC8R1CHJ8:00000022, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/categories
+[2025-10-20 00:58:49 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/categories - 200 null application/json; charset=utf-8 16.2442ms
+[2025-10-20 00:58:49 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/categories, Response status code: 200
+[2025-10-20 01:00:52 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/create - null null
+[2025-10-20 01:00:52 INF] CORS policy execution successful.
+[2025-10-20 01:00:52 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/create - 204 null null 5.8838ms
+[2025-10-20 01:00:52 INF] Request starting HTTP/1.1 POST http://localhost:5000/quiz/create - application/json 354
+[2025-10-20 01:00:52 INF] CORS policy execution successful.
+[2025-10-20 01:00:52 INF] RequestId: 0HNGFC8R1CHJ8:00000024, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:00:52 INF] RequestId: 0HNGFC8R1CHJ8:00000024, PreviousRequestId: -
+No authentication needed for path: /quiz/create
+[2025-10-20 01:00:52 INF] RequestId: 0HNGFC8R1CHJ8:00000024, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:00:53 INF] RequestId: 0HNGFC8R1CHJ8:00000024, PreviousRequestId: -
+201 Created status code of request URI: http://localhost:5127/api/quiz/create
+[2025-10-20 01:00:53 INF] Request finished HTTP/1.1 POST http://localhost:5000/quiz/create - 201 null application/json; charset=utf-8 244.4149ms
+[2025-10-20 01:00:53 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/quiz/create, Response status code: 201
+[2025-10-20 01:00:54 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:00:54 INF] CORS policy execution successful.
+[2025-10-20 01:00:54 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 204 null null 13.6608ms
+[2025-10-20 01:00:54 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:00:54 INF] CORS policy execution successful.
+[2025-10-20 01:00:54 INF] RequestId: 0HNGFC8R1CHJ8:00000026, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:00:54 INF] RequestId: 0HNGFC8R1CHJ8:00000026, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/4
+[2025-10-20 01:00:54 INF] RequestId: 0HNGFC8R1CHJ8:00000026, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:00:54 INF] RequestId: 0HNGFC8R1CHJ8:00000026, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/4?page=1&pageSize=5
+[2025-10-20 01:00:54 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 200 null application/json; charset=utf-8 32.7846ms
+[2025-10-20 01:00:54 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/admin/4, Response status code: 200
+[2025-10-20 01:00:59 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - null null
+[2025-10-20 01:00:59 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/full - null null
+[2025-10-20 01:00:59 INF] CORS policy execution successful.
+[2025-10-20 01:00:59 INF] CORS policy execution successful.
+[2025-10-20 01:00:59 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - 204 null null 12.8948ms
+[2025-10-20 01:00:59 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/full - 204 null null 11.8134ms
+[2025-10-20 01:00:59 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/categories - null null
+[2025-10-20 01:00:59 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/10/full - null null
+[2025-10-20 01:00:59 INF] CORS policy execution successful.
+[2025-10-20 01:00:59 INF] CORS policy execution successful.
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJ8:00000028, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJG:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJ8:00000028, PreviousRequestId: -
+No authentication needed for path: /quiz/categories
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJG:00000002, PreviousRequestId: -
+No authentication needed for path: /quiz/10/full
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJ8:00000028, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJG:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJ8:00000028, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/categories
+[2025-10-20 01:00:59 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/categories - 200 null application/json; charset=utf-8 29.8945ms
+[2025-10-20 01:00:59 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/categories, Response status code: 200
+[2025-10-20 01:00:59 INF] RequestId: 0HNGFC8R1CHJG:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/10/full
+[2025-10-20 01:00:59 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/10/full - 200 null application/json; charset=utf-8 108.2247ms
+[2025-10-20 01:00:59 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/10/full, Response status code: 200
+[2025-10-20 01:01:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/questions/31 - null null
+[2025-10-20 01:01:14 INF] CORS policy execution successful.
+[2025-10-20 01:01:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/questions/31 - 204 null null 16.6731ms
+[2025-10-20 01:01:14 INF] Request starting HTTP/1.1 DELETE http://localhost:5000/quiz/10/questions/31 - null null
+[2025-10-20 01:01:14 INF] CORS policy execution successful.
+[2025-10-20 01:01:14 INF] RequestId: 0HNGFC8R1CHJG:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{quizId}/questions/{everything}
+[2025-10-20 01:01:14 INF] RequestId: 0HNGFC8R1CHJG:00000004, PreviousRequestId: -
+No authentication needed for path: /quiz/10/questions/31
+[2025-10-20 01:01:14 INF] RequestId: 0HNGFC8R1CHJG:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{quizId}/questions/{everything}
+[2025-10-20 01:01:15 INF] RequestId: 0HNGFC8R1CHJG:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/10/questions/31
+[2025-10-20 01:01:15 INF] Request finished HTTP/1.1 DELETE http://localhost:5000/quiz/10/questions/31 - 200 null text/plain; charset=utf-8 214.628ms
+[2025-10-20 01:01:15 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: DELETE http://localhost:5000/quiz/10/questions/31, Response status code: 200
+[2025-10-20 01:01:16 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/10 - null null
+[2025-10-20 01:01:16 INF] CORS policy execution successful.
+[2025-10-20 01:01:16 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/10 - 204 null null 4.7904ms
+[2025-10-20 01:01:16 INF] Request starting HTTP/1.1 PUT http://localhost:5000/quiz/admin/10 - application/json 229
+[2025-10-20 01:01:16 INF] CORS policy execution successful.
+[2025-10-20 01:01:16 INF] RequestId: 0HNGFC8R1CHJG:00000006, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:16 INF] RequestId: 0HNGFC8R1CHJG:00000006, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/10
+[2025-10-20 01:01:16 INF] RequestId: 0HNGFC8R1CHJG:00000006, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:16 INF] RequestId: 0HNGFC8R1CHJG:00000006, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/10
+[2025-10-20 01:01:16 INF] Request finished HTTP/1.1 PUT http://localhost:5000/quiz/admin/10 - 200 null application/json; charset=utf-8 84.5111ms
+[2025-10-20 01:01:16 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT http://localhost:5000/quiz/admin/10, Response status code: 200
+[2025-10-20 01:01:18 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:18 INF] CORS policy execution successful.
+[2025-10-20 01:01:18 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 204 null null 10.8121ms
+[2025-10-20 01:01:18 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:18 INF] CORS policy execution successful.
+[2025-10-20 01:01:18 INF] RequestId: 0HNGFC8R1CHJG:00000008, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:18 INF] RequestId: 0HNGFC8R1CHJG:00000008, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/4
+[2025-10-20 01:01:18 INF] RequestId: 0HNGFC8R1CHJG:00000008, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:18 INF] RequestId: 0HNGFC8R1CHJG:00000008, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/4?page=1&pageSize=5
+[2025-10-20 01:01:18 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 200 null application/json; charset=utf-8 32.6202ms
+[2025-10-20 01:01:18 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/admin/4, Response status code: 200
+[2025-10-20 01:01:21 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - null null
+[2025-10-20 01:01:21 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/full - null null
+[2025-10-20 01:01:21 INF] CORS policy execution successful.
+[2025-10-20 01:01:21 INF] CORS policy execution successful.
+[2025-10-20 01:01:21 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/categories - 204 null null 265.6681ms
+[2025-10-20 01:01:21 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/10/full - 204 null null 265.5456ms
+[2025-10-20 01:01:21 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/10/full - null null
+[2025-10-20 01:01:21 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/categories - null null
+[2025-10-20 01:01:21 INF] CORS policy execution successful.
+[2025-10-20 01:01:21 INF] CORS policy execution successful.
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJG:0000000A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJ8:0000002A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJ8:0000002A, PreviousRequestId: -
+No authentication needed for path: /quiz/categories
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJ8:0000002A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJG:0000000A, PreviousRequestId: -
+No authentication needed for path: /quiz/10/full
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJG:0000000A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJ8:0000002A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/categories
+[2025-10-20 01:01:22 INF] RequestId: 0HNGFC8R1CHJG:0000000A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/10/full
+[2025-10-20 01:01:22 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/categories - 200 null application/json; charset=utf-8 84.1428ms
+[2025-10-20 01:01:22 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/10/full - 200 null application/json; charset=utf-8 88.2471ms
+[2025-10-20 01:01:22 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/categories, Response status code: 200
+[2025-10-20 01:01:22 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/10/full, Response status code: 200
+[2025-10-20 01:01:32 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:32 INF] CORS policy execution successful.
+[2025-10-20 01:01:32 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 204 null null 8.3335ms
+[2025-10-20 01:01:32 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:32 INF] CORS policy execution successful.
+[2025-10-20 01:01:32 INF] RequestId: 0HNGFC8R1CHJG:0000000C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:32 INF] RequestId: 0HNGFC8R1CHJG:0000000C, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/4
+[2025-10-20 01:01:32 INF] RequestId: 0HNGFC8R1CHJG:0000000C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:32 INF] RequestId: 0HNGFC8R1CHJG:0000000C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/4?page=1&pageSize=5
+[2025-10-20 01:01:32 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 200 null application/json; charset=utf-8 21.8142ms
+[2025-10-20 01:01:32 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/admin/4, Response status code: 200
+[2025-10-20 01:01:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/10 - null null
+[2025-10-20 01:01:38 INF] CORS policy execution successful.
+[2025-10-20 01:01:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/10 - 204 null null 17.2007ms
+[2025-10-20 01:01:38 INF] Request starting HTTP/1.1 DELETE http://localhost:5000/quiz/admin/10 - null null
+[2025-10-20 01:01:38 INF] CORS policy execution successful.
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:0000000E, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:0000000E, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/10
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:0000000E, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:0000000E, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/10
+[2025-10-20 01:01:38 INF] Request finished HTTP/1.1 DELETE http://localhost:5000/quiz/admin/10 - 200 null text/plain; charset=utf-8 223.2326ms
+[2025-10-20 01:01:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: DELETE http://localhost:5000/quiz/admin/10, Response status code: 200
+[2025-10-20 01:01:38 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:38 INF] CORS policy execution successful.
+[2025-10-20 01:01:38 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 204 null null 6.7101ms
+[2025-10-20 01:01:38 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - null null
+[2025-10-20 01:01:38 INF] CORS policy execution successful.
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:00000010, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:00000010, PreviousRequestId: -
+No authentication needed for path: /quiz/admin/4
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:00000010, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:38 INF] RequestId: 0HNGFC8R1CHJG:00000010, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/admin/4?page=1&pageSize=5
+[2025-10-20 01:01:38 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/admin/4?page=1&pageSize=5 - 200 null application/json; charset=utf-8 20.3324ms
+[2025-10-20 01:01:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/admin/4, Response status code: 200
+[2025-10-20 01:01:42 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - null null
+[2025-10-20 01:01:42 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 01:01:42 INF] CORS policy execution successful.
+[2025-10-20 01:01:42 INF] CORS policy execution successful.
+[2025-10-20 01:01:42 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/all - 204 null null 9.2996ms
+[2025-10-20 01:01:42 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 204 null null 9.7596ms
+[2025-10-20 01:01:42 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - null null
+[2025-10-20 01:01:42 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/all - null null
+[2025-10-20 01:01:42 INF] CORS policy execution successful.
+[2025-10-20 01:01:42 INF] CORS policy execution successful.
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJG:00000012, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJ8:0000002C, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/{everything}
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJG:00000012, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJ8:0000002C, PreviousRequestId: -
+No authentication needed for path: /quiz/all
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJG:00000012, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJ8:0000002C, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/{everything}
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJ8:0000002C, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/all
+[2025-10-20 01:01:42 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/all - 200 null application/json; charset=utf-8 26.5839ms
+[2025-10-20 01:01:42 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 01:01:42 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/all, Response status code: 200
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJH:00000001, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJH:00000001, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJH:00000001, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJH:00000001, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 01:01:42 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 23.7925ms
+[2025-10-20 01:01:42 INF] RequestId: 0HNGFC8R1CHJG:00000012, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all
+[2025-10-20 01:01:42 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 01:01:42 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all - 200 null application/json; charset=utf-8 65.4595ms
+[2025-10-20 01:01:42 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 01:02:03 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 01:02:03 INF] CORS policy execution successful.
+[2025-10-20 01:02:03 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 204 null null 11.7355ms
+[2025-10-20 01:02:03 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - null null
+[2025-10-20 01:02:03 INF] CORS policy execution successful.
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJG:00000014, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJG:00000014, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJG:00000014, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 01:02:03 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJH:00000002, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJH:00000002, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJH:00000002, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJH:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 01:02:03 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 16.1773ms
+[2025-10-20 01:02:03 INF] RequestId: 0HNGFC8R1CHJG:00000014, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3
+[2025-10-20 01:02:03 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 01:02:03 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=all&quizId=3 - 200 null application/json; charset=utf-8 44.2758ms
+[2025-10-20 01:02:03 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 01:02:08 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - null null
+[2025-10-20 01:02:08 INF] CORS policy execution successful.
+[2025-10-20 01:02:08 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - 204 null null 5.3355ms
+[2025-10-20 01:02:08 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - null null
+[2025-10-20 01:02:08 INF] CORS policy execution successful.
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJG:00000016, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJG:00000016, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJG:00000016, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 01:02:08 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJH:00000003, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJH:00000003, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJH:00000003, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJH:00000003, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 01:02:08 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 16.2368ms
+[2025-10-20 01:02:08 INF] RequestId: 0HNGFC8R1CHJG:00000016, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3
+[2025-10-20 01:02:08 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 01:02:08 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=today&quizId=3 - 200 null application/json; charset=utf-8 46.9921ms
+[2025-10-20 01:02:08 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 01:02:11 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - null null
+[2025-10-20 01:02:11 INF] CORS policy execution successful.
+[2025-10-20 01:02:11 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - 204 null null 5.6658ms
+[2025-10-20 01:02:11 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - null null
+[2025-10-20 01:02:11 INF] CORS policy execution successful.
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJG:00000018, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJG:00000018, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJG:00000018, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 01:02:11 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJH:00000004, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJH:00000004, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJH:00000004, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJH:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 01:02:11 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 17.628ms
+[2025-10-20 01:02:11 INF] RequestId: 0HNGFC8R1CHJG:00000018, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3
+[2025-10-20 01:02:11 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 01:02:11 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisWeek&quizId=3 - 200 null application/json; charset=utf-8 46.6567ms
+[2025-10-20 01:02:11 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 01:02:14 INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisMonth&quizId=3 - null null
+[2025-10-20 01:02:14 INF] CORS policy execution successful.
+[2025-10-20 01:02:14 INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisMonth&quizId=3 - 204 null null 4.5073ms
+[2025-10-20 01:02:14 INF] Request starting HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisMonth&quizId=3 - null null
+[2025-10-20 01:02:14 INF] CORS policy execution successful.
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJG:0000001A, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/quiz/leaderboard
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJG:0000001A, PreviousRequestId: -
+No authentication needed for path: /quiz/leaderboard
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJG:0000001A, PreviousRequestId: -
+No authorization needed for upstream path: /quiz/leaderboard
+[2025-10-20 01:02:14 INF] Request starting HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - application/json; charset=utf-8 null
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJH:00000005, PreviousRequestId: -
+EnableEndpointEndpointRateLimiting is not enabled for downstream path: /api/users/{everything}
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJH:00000005, PreviousRequestId: -
+No authentication needed for path: /users/usernames-with-pictures
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJH:00000005, PreviousRequestId: -
+No authorization needed for upstream path: /users/{everything}
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJH:00000005, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5287/api/users/usernames-with-pictures
+[2025-10-20 01:02:14 INF] Request finished HTTP/1.1 POST http://localhost:5000/users/usernames-with-pictures - 200 null application/json; charset=utf-8 15.2332ms
+[2025-10-20 01:02:14 INF] RequestId: 0HNGFC8R1CHJG:0000001A, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5127/api/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisMonth&quizId=3
+[2025-10-20 01:02:14 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/users/usernames-with-pictures, Response status code: 200
+[2025-10-20 01:02:14 INF] Request finished HTTP/1.1 GET http://localhost:5000/quiz/leaderboard?page=1&pageSize=5&timeFilter=thisMonth&quizId=3 - 200 null application/json; charset=utf-8 56.02ms
+[2025-10-20 01:02:14 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/quiz/leaderboard, Response status code: 200
+[2025-10-20 01:02:30 INF] Application is shutting down...
