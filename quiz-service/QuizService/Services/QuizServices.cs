@@ -299,29 +299,27 @@ namespace QuizService.Services
             return await _quizRepository.GetUserAttemptsForQuizAsync(userId, quizId);
         }
 
-        public async Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(
-        string? timeFilter, long? quizId, int page, int pageSize)
+        public async Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(string? timeFilter, long? quizId, int page, int pageSize)
         {
-            var (attempts, total) = await _quizRepository.GetLeaderboardAsync(timeFilter, quizId, page, pageSize);
+            var result = await _quizRepository.GetLeaderboardAsync(timeFilter, quizId, page, pageSize);
 
-            var userIds = attempts.Select(a => a.PlayerId).Distinct().ToList();
-            var usernames = await _userClient.GetUsernamesAsync(userIds);
-
-            var ranked = attempts.Select((a, index) => new AttemptRankingDTO
+            
+            var playerIds = result.Data.Select(r => long.Parse(r.Username)).Distinct().ToList();
+            if (playerIds.Count > 0)
             {
-                Position = ((page - 1) * pageSize) + index + 1,
-                Username = usernames.ContainsKey(a.PlayerId) ? usernames[a.PlayerId] : "Unknown",
-                Score = a.Score,
-                FinishedAt = a.FinishedAt
-            }).ToList();
+                var users = await _userClient.GetUsersByIdsAsync(playerIds);
+                foreach (var item in result.Data)
+                {
+                    var id = long.Parse(item.Username);
+                    if (users.ContainsKey(id))
+                    {
+                        item.Username = users[id].Username;
+                        item.Picture = users[id].Picture;
+                    }
+                }
+            }
 
-            return new PagedResult<AttemptRankingDTO>
-            {
-                Data = ranked,
-                Total = total,
-                Page = page,
-                PageSize = pageSize
-            };
+            return result;
         }
     }
 }

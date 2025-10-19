@@ -23,4 +23,8 @@
     <Folder Include="Data\Configurations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\user-service\UserService\UserService.csproj" />
+  </ItemGroup>
+
 </Project>

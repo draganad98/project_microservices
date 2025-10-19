@@ -1,25 +1,24 @@
-﻿namespace QuizService.Helpers
+﻿using static System.Net.WebRequestMethods;
+using UserService.DTO.UserDTO;
+namespace QuizService.Helpers
 {
     public class UserClient
     {
-        private readonly HttpClient _httpClient;
+        private readonly HttpClient _http;
 
-        public UserClient(HttpClient httpClient)
+        public UserClient(HttpClient http)
         {
-            _httpClient = httpClient;
+            _http = http;
         }
 
-        public async Task<Dictionary<long, string>> GetUsernamesAsync(List<long> ids)
+        public async Task<Dictionary<long, UserDTO>> GetUsersByIdsAsync(List<long> ids)
         {
-            if (ids == null || ids.Count == 0)
-                return new Dictionary<long, string>();
-
-            var response = await _httpClient.PostAsJsonAsync("http://localhost:5287/api/users/usernames", ids);
+            var response = await _http.PostAsJsonAsync("/users/usernames-with-pictures", ids);
             response.EnsureSuccessStatusCode();
-
-            var result = await response.Content.ReadFromJsonAsync<Dictionary<long, string>>();
-            return result ?? new Dictionary<long, string>();
+            return await response.Content.ReadFromJsonAsync<Dictionary<long, UserDTO>>() ?? new();
         }
+
+
     }
 
 }

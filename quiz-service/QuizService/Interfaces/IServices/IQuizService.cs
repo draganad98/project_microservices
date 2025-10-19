@@ -30,7 +30,6 @@ namespace QuizService.Interfaces.IServices
         public Task<(List<Attempt> Attempts, int Total)> GetUserAttemptsAsync(long userId, int page, int pageSize);
         public Task<List<Attempt>> GetUserAttemptsForQuizAsync(long userId, long quizId);
 
-        public Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(
-        string? timeFilter, long? quizId, int page, int pageSize);
+        Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(string? timeFilter, long? quizId, int page, int pageSize);
     }
 }

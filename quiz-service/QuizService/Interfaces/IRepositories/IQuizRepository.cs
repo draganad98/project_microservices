@@ -28,7 +28,6 @@ namespace QuizService.Interfaces.IRepositories
 
         public Task<List<Attempt>> GetUserAttemptsForQuizAsync(long userId, long quizId);
 
-        public Task<(List<Attempt> Attempts, int Total)> GetLeaderboardAsync(
-    string? timeFilter, long? quizId, int page, int pageSize);
+        Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(string? timeFilter, long? quizId, int page, int pageSize);
     }
 }

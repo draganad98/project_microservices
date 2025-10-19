@@ -6,6 +6,7 @@
         public string Username { get; set; } = string.Empty;
         public long Score { get; set; }
         public DateTime FinishedAt { get; set; }
+        public string Picture { get; set; } = string.Empty;
     }
 
     public class PagedResult<T>

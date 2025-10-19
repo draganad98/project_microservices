@@ -46,7 +46,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddHttpClient<UserClient>();
+builder.Services.AddHttpClient<UserClient>(client =>
+{
+    
+    client.BaseAddress = new Uri("http://localhost:5000");
+});
 
 builder.Services.AddScoped<IQuizRepository, QuizRepo>();
 builder.Services.AddScoped<IQuestionRepository, QuestionRepo>();

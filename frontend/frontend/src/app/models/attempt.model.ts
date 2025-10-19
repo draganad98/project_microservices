@@ -37,4 +37,5 @@ export interface AttemptRankingDTO {
   username: string;
   score: number;
   finishedAt: string; 
+  picture: string;
 }

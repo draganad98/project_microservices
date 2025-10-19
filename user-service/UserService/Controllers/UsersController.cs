@@ -46,11 +46,10 @@ namespace UserService.Controllers
             return Ok(response);
         }
 
-        [HttpPost("usernames")]
-        // [Authorize(Policy = "JwtSchemePolicy", Roles = "Admin, User")]  
-        public async Task<IActionResult> GetUsernames([FromBody] List<long> ids)
+        [HttpPost("usernames-with-pictures")]
+        public async Task<IActionResult> GetUsernamesWithPictures([FromBody] List<long> ids)
         {
-            var result = await _userService.GetUsernamesByIdsAsync(ids);
+            var result = await _userService.GetUsersByIdsAsync(ids);
             return Ok(result);
         }
     }

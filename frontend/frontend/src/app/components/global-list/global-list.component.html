@@ -37,9 +37,12 @@
       </ng-container>
 
       <ng-container matColumnDef="username">
-        <th mat-header-cell *matHeaderCellDef> Username </th>
-        <td mat-cell *matCellDef="let row"> {{ row.username }} </td>
-      </ng-container>
+  <th mat-header-cell *matHeaderCellDef> Username </th>
+  <td mat-cell *matCellDef="let row">
+    <img [src]="row.picture" class="user-img" />
+    {{ row.username }}
+  </td>
+</ng-container>
 
       <ng-container matColumnDef="score">
         <th mat-header-cell *matHeaderCellDef> Score </th>

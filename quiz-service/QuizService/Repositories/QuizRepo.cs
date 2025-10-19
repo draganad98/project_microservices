@@ -367,38 +367,38 @@ namespace QuizService.Repositories
                 .ToListAsync();
         }
 
-        public async Task<(List<Attempt> Attempts, int Total)> GetLeaderboardAsync(
-    string? timeFilter, long? quizId, int page, int pageSize)
+        public async Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(string? timeFilter, long? quizId, int page, int pageSize)
         {
             var query = _data.Attempts.AsQueryable();
+
             var now = DateTime.UtcNow;
+            if (timeFilter == "today") query = query.Where(a => a.FinishedAt.Date == now.Date);
+            else if (timeFilter == "thisWeek") query = query.Where(a => a.FinishedAt.Date >= now.Date.AddDays(-(int)now.DayOfWeek));
+            else if (timeFilter == "thisMonth") query = query.Where(a => a.FinishedAt.Date >= new DateTime(now.Year, now.Month, 1));
 
-            
-            if (timeFilter == "today")
-                query = query.Where(a => a.FinishedAt.Date == now.Date);
-            else if (timeFilter == "thisWeek")
-                query = query.Where(a => a.FinishedAt.Date >= now.Date.AddDays(-(int)now.DayOfWeek));
-            else if (timeFilter == "thisMonth")
-                query = query.Where(a => a.FinishedAt.Date >= new DateTime(now.Year, now.Month, 1));
-
-            
-            if (quizId.HasValue && quizId.Value != 0)
-                query = query.Where(a => a.QuizId == quizId.Value);
+            if (quizId.HasValue && quizId != 0) query = query.Where(a => a.QuizId == quizId.Value);
 
             var total = await query.CountAsync();
+            var attempts = await query.OrderByDescending(a => a.Score).ThenBy(a => a.FinishedAt)
+                .Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
 
-            var attempts = await query
-                .OrderByDescending(a => a.Score)
-                .ThenBy(a => a.FinishedAt)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
+            var ranked = attempts.Select((a, index) => new AttemptRankingDTO
+            {
+                Position = ((page - 1) * pageSize) + index + 1,
+                Username = a.PlayerId.ToString(), 
+                Picture = string.Empty,
+                Score = a.Score,
+                FinishedAt = a.FinishedAt
+            }).ToList();
 
-            return (attempts, total);
+            return new PagedResult<AttemptRankingDTO>
+            {
+                Data = ranked,
+                Total = total,
+                Page = page,
+                PageSize = pageSize
+            };
         }
-
-
-
 
     }
 }

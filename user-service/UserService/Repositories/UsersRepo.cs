@@ -1,8 +1,9 @@
-﻿using UserService.Interfaces.IRepositories;
-using UserService.Models;
-using UserService.Helpers;
+﻿using Microsoft.EntityFrameworkCore;
 using UserService.Data;
-using Microsoft.EntityFrameworkCore;
+using UserService.DTO.UserDTO;
+using UserService.Helpers;
+using UserService.Interfaces.IRepositories;
+using UserService.Models;
 
 namespace UserService.Repositories
 {
@@ -52,11 +53,15 @@ namespace UserService.Repositories
             return user;
         }
 
-        public async Task<Dictionary<long, string>> GetUsernamesByIdsAsync(List<long> ids)
+        public async Task<Dictionary<long, UserDTO>> GetUsersByIdsAsync(List<long> ids)
         {
             return await _data.Users
                 .Where(u => ids.Contains(u.Id))
-                .ToDictionaryAsync(u => u.Id, u => u.Username);
+                .ToDictionaryAsync(u => u.Id, u => new UserDTO
+                {
+                    Username = u.Username,
+                    Picture = u.Picture
+                });
         }
 
     }
