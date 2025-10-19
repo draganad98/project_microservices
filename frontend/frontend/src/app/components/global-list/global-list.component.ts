@@ -48,11 +48,11 @@ export class GlobalListComponent implements OnInit {
   loadLeaderboard(page: number = 1) {
   this.quizService.getLeaderboard(this.selectedQuizId, this.selectedPeriod, page, this.pageSize)
     .subscribe(res => {
-      const baseUrl = 'http://localhost:5000'; // Gateway domen
+      const baseUrl = 'http://localhost:5000'; 
       res.data.forEach(item => {
 
         if (item.picture) {
-          // ako slika počinje sa "/", dodaj baseUrl ispred
+          
           if (item.picture.startsWith('/assets')) {
             item.picture = 'http://localhost:4200' + item.picture;
           }
@@ -61,7 +61,7 @@ export class GlobalListComponent implements OnInit {
             item.picture = baseUrl + item.picture;
           }
         } else {
-          // fallback slika ako korisnik nema profilnu
+          
           item.picture = '/assets/images/avatar.jpg';
         }
     });
