@@ -14,7 +14,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// JWT setup
+
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 string? secretKey = builder.Configuration.GetSection("AppSettings:Key").Value;
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!));
@@ -38,20 +38,20 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("JwtSchemePolicy", policyBuilder.RequireAuthenticatedUser().Build());
 });
 
-// Controllers
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// DbContext (samo User)
+
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// DI – samo User
+
 builder.Services.AddScoped<IUsersRepository, UsersRepo>();
 builder.Services.AddScoped<IUsersService, UsersService>();
 
-// AutoMapper – User profile
+
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<UserAutoMapperProfiles>());
 
 builder.Services.AddCors();

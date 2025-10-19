@@ -367,16 +367,13 @@ namespace QuizService.Repositories
                 .ToListAsync();
         }
 
-        public async Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(
-        string? timeFilter, long? quizId, int page, int pageSize)
+        public async Task<(List<Attempt> Attempts, int Total)> GetLeaderboardAsync(
+    string? timeFilter, long? quizId, int page, int pageSize)
         {
-            var query = _data.Attempts
-                .Include(a => a.PlayerId) //sta ovde
-                .AsQueryable();
-
+            var query = _data.Attempts.AsQueryable();
             var now = DateTime.UtcNow;
 
-
+            
             if (timeFilter == "today")
                 query = query.Where(a => a.FinishedAt.Date == now.Date);
             else if (timeFilter == "thisWeek")
@@ -384,13 +381,11 @@ namespace QuizService.Repositories
             else if (timeFilter == "thisMonth")
                 query = query.Where(a => a.FinishedAt.Date >= new DateTime(now.Year, now.Month, 1));
 
-
+            
             if (quizId.HasValue && quizId.Value != 0)
                 query = query.Where(a => a.QuizId == quizId.Value);
 
-
             var total = await query.CountAsync();
-
 
             var attempts = await query
                 .OrderByDescending(a => a.Score)
@@ -399,23 +394,9 @@ namespace QuizService.Repositories
                 .Take(pageSize)
                 .ToListAsync();
 
-
-            var ranked = attempts.Select((a, index) => new AttemptRankingDTO
-            {
-                Position = ((page - 1) * pageSize) + index + 1,
-                Username = a.PlayerId.ToString(),  //isto
-                Score = a.Score,
-                FinishedAt = a.FinishedAt
-            }).ToList();
-
-            return new PagedResult<AttemptRankingDTO>
-            {
-                Data = ranked,
-                Total = total,
-                Page = page,
-                PageSize = pageSize
-            };
+            return (attempts, total);
         }
+
 
 
 

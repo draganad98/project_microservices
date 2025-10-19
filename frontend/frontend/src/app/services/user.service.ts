@@ -9,7 +9,7 @@ import { LoginUser } from '../models/login.model';
 })
 export class UserService {
 
-  private apiUrl = 'http://localhost:5071/api/users'; 
+  private apiUrl = 'http://localhost:5000/users'; 
 
   constructor(private http: HttpClient) { }
 
@@ -24,14 +24,10 @@ export class UserService {
     }
 
     return this.http.post(`${this.apiUrl}/register`, formData);
-}
-
+  }
 
   login(user: LoginUser): Observable<string> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this.http.post(`${this.apiUrl}/authentication`, user, { headers, responseType: 'text' });
-
   }
-
-
 }

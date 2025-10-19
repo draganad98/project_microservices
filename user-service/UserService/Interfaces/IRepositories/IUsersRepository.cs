@@ -8,5 +8,6 @@ namespace UserService.Interfaces.IRepositories
         public Task<bool> DoesEmailExist(string email);
         public Task<bool> DoesUsernameExist(string username);
         public Task<User> Authenticate(string email, string password);
+        public Task<Dictionary<long, string>> GetUsernamesByIdsAsync(List<long> ids);
     }
 }

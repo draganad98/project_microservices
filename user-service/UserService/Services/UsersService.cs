@@ -104,5 +104,13 @@ namespace UserService.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        public async Task<Dictionary<long, string>> GetUsernamesByIdsAsync(List<long> ids)
+        {
+            if (ids == null || ids.Count == 0)
+                return new Dictionary<long, string>();
+
+            return await _usersRepo.GetUsernamesByIdsAsync(ids);
+        }
+
     }
 }

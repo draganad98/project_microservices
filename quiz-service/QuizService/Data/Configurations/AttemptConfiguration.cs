@@ -31,14 +31,14 @@ namespace QuizService.Data.Configurations
             builder.Property(x => x.DurationSeconds)
                    .IsRequired();
 
-            // PlayerId je samo običan broj (nema foreign key ka User servisu)
+            
             builder.Property(x => x.PlayerId)
                    .IsRequired();
 
             builder.Property(x => x.QuizId)
                    .IsRequired();
 
-            // Ova veza ostaje jer je Quiz deo istog servisa
+            
             builder.HasOne(a => a.Quiz)
                    .WithMany(q => q.Attempts)
                    .HasForeignKey(a => a.QuizId)

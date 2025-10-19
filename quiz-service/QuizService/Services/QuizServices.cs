@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using QuizService.Data;
 using QuizService.DTO.QuizDTO;
+using QuizService.Helpers;
 using QuizService.Interfaces.IRepositories;
 using QuizService.Interfaces.IServices;
 using QuizService.Models;
@@ -14,19 +15,21 @@ namespace QuizService.Services
         private readonly ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
         private readonly DataContext _context;
-
+        private readonly UserClient _userClient;
 
         public QuizServices(IQuizRepository quizRepository,
                           IQuestionService questionService,
                           IMapper mapper,
                           DataContext context,
-                          ICategoryRepository categoryRepository)
+                          ICategoryRepository categoryRepository,
+                          UserClient userClient)
         {
             _quizRepository = quizRepository;
             _questionService = questionService;
             _mapper = mapper;
             _context = context;
             _categoryRepository = categoryRepository;
+            _userClient = userClient;
         }
 
         public async Task<QuizResponseDto?> CreateQuizAsync(CreateQuizDto createQuizDto)
@@ -299,7 +302,26 @@ namespace QuizService.Services
         public async Task<PagedResult<AttemptRankingDTO>> GetLeaderboardAsync(
         string? timeFilter, long? quizId, int page, int pageSize)
         {
-            return await _quizRepository.GetLeaderboardAsync(timeFilter, quizId, page, pageSize);
+            var (attempts, total) = await _quizRepository.GetLeaderboardAsync(timeFilter, quizId, page, pageSize);
+
+            var userIds = attempts.Select(a => a.PlayerId).Distinct().ToList();
+            var usernames = await _userClient.GetUsernamesAsync(userIds);
+
+            var ranked = attempts.Select((a, index) => new AttemptRankingDTO
+            {
+                Position = ((page - 1) * pageSize) + index + 1,
+                Username = usernames.ContainsKey(a.PlayerId) ? usernames[a.PlayerId] : "Unknown",
+                Score = a.Score,
+                FinishedAt = a.FinishedAt
+            }).ToList();
+
+            return new PagedResult<AttemptRankingDTO>
+            {
+                Data = ranked,
+                Total = total,
+                Page = page,
+                PageSize = pageSize
+            };
         }
     }
 }

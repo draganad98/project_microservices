@@ -14,7 +14,8 @@ import { AttemptRankingDTO } from '../models/attempt.model';
   providedIn: 'root'
 })
 export class QuizService {
-  private apiUrl = 'http://localhost:5071/api/quiz'; 
+ 
+  private apiUrl = 'http://localhost:5000/quiz'; 
 
   constructor(private http: HttpClient) {}
 
@@ -34,20 +35,22 @@ export class QuizService {
     keyword: string = ''
   ): Observable<{ data: GetQuizzes[], total: number, page: number, pageSize: number }> {
     let params = `?page=${page}&pageSize=${pageSize}`;
-    if (selectedCategory.length > 0) params += `&categoryIds=${selectedCategory.join(',')}`;
+    if (selectedCategory.length > 0) {
+  selectedCategory.forEach(catId => {
+    params += `&categoryIds=${catId}`;
+  });
+}
     if (selectedDifficulty) params += `&difficulty=${selectedDifficulty}`;
     if (keyword) params += `&keyword=${keyword}`;
 
     return this.http.get<{ data: GetQuizzes[], total: number, page: number, pageSize: number }>(`${this.apiUrl}/quizzes${params}`);
-}
-
+  }
 
   getMyQuizzes(id: number | null, page: number = 1, pageSize: number = 5): Observable<{ data: GetAdminQuizzes[], total: number, page: number, pageSize: number }> {
     return this.http.get<{ data: GetAdminQuizzes[], total: number, page: number, pageSize: number }>(
-    `${this.apiUrl}/admin/${id}?page=${page}&pageSize=${pageSize}`
-  );
-}
-
+      `${this.apiUrl}/admin/${id}?page=${page}&pageSize=${pageSize}`
+    );
+  }
 
   deleteQuiz(id: number): Observable<string> {
     return this.http.delete(`${this.apiUrl}/admin/${id}`, { responseType: 'text' });
@@ -86,40 +89,37 @@ export class QuizService {
   }
 
   getAttemptAnswers(attemptId: number, page: number = 1, pageSize: number = 5) {
-  return this.http.get<{ data: any[], total: number, page: number, pageSize: number, quizId: number }>(
-    `${this.apiUrl}/attempt/${attemptId}/answers?page=${page}&pageSize=${pageSize}`
-  );
-}
+    return this.http.get<{ data: any[], total: number, page: number, pageSize: number, quizId: number }>(
+      `${this.apiUrl}/attempt/${attemptId}/answers?page=${page}&pageSize=${pageSize}`
+    );
+  }
 
   getMyAttempts(userId: number | null, page: number = 1, pageSize: number = 5) {
-  return this.http.get<{ data: any[], total: number, page: number, pageSize: number }>(
-    `${this.apiUrl}/myattempts?userId=${userId}&page=${page}&pageSize=${pageSize}`
-  );
-}
+    return this.http.get<{ data: any[], total: number, page: number, pageSize: number }>(
+      `${this.apiUrl}/myattempts?userId=${userId}&page=${page}&pageSize=${pageSize}`
+    );
+  }
 
-getUserAttemptsForQuiz(userId: number | null, quizId: number) {
-  return this.http.get<{ id: number, score: number, startedAt: string }[]>(
-    `${this.apiUrl}/quiz/${quizId}/user-attempts/${userId}`
-  );
-}
-  
-getAll(): Observable<GetQuizzes[]> {
-  return this.http.get<GetQuizzes[]>(`${this.apiUrl}/all`);
-}
+  getUserAttemptsForQuiz(userId: number | null, quizId: number) {
+    return this.http.get<{ id: number, score: number, startedAt: string }[]>(
+      `${this.apiUrl}/quiz/${quizId}/user-attempts/${userId}`
+    );
+  }
 
-getLeaderboard(
-  quizId: number = 0,
-  period: string = 'all',
-  page: number = 1,
-  pageSize: number = 5
-) {
-  let params = `?page=${page}&pageSize=${pageSize}&timeFilter=${period}`;
-  if (quizId !== 0) params += `&quizId=${quizId}`;
-  return this.http.get<{ data: AttemptRankingDTO[], total: number, page: number, pageSize: number }>(
-    `${this.apiUrl}/leaderboard${params}`
-  );
+  getAll(): Observable<GetQuizzes[]> {
+    return this.http.get<GetQuizzes[]>(`${this.apiUrl}/all`);
+  }
+
+  getLeaderboard(
+    quizId: number = 0,
+    period: string = 'all',
+    page: number = 1,
+    pageSize: number = 5
+  ) {
+    let params = `?page=${page}&pageSize=${pageSize}&timeFilter=${period}`;
+    if (quizId !== 0) params += `&quizId=${quizId}`;
+    return this.http.get<{ data: AttemptRankingDTO[], total: number, page: number, pageSize: number }>(
+      `${this.apiUrl}/leaderboard${params}`
+    );
+  }
 }
-
-
-}
-

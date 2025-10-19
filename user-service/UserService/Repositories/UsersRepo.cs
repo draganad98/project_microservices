@@ -52,5 +52,12 @@ namespace UserService.Repositories
             return user;
         }
 
+        public async Task<Dictionary<long, string>> GetUsernamesByIdsAsync(List<long> ids)
+        {
+            return await _data.Users
+                .Where(u => ids.Contains(u.Id))
+                .ToDictionaryAsync(u => u.Id, u => u.Username);
+        }
+
     }
 }

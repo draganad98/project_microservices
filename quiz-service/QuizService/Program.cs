@@ -14,7 +14,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// JWT setup (isto kao u UserService)
+
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 string? secretKey = builder.Configuration.GetSection("AppSettings:Key").Value;
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!));
@@ -38,16 +38,16 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("JwtSchemePolicy", policyBuilder.RequireAuthenticatedUser().Build());
 });
 
-// Controllers
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// DbContext – Quiz + Question + Choice + Category + Attempt
+
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddHttpClient<UserClient>();
 
-// DI – Quiz-related
 builder.Services.AddScoped<IQuizRepository, QuizRepo>();
 builder.Services.AddScoped<IQuestionRepository, QuestionRepo>();
 builder.Services.AddScoped<IChoiceRepository, ChoiceRepo>();
@@ -56,7 +56,7 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepo>();
 builder.Services.AddScoped<IQuizService, QuizServices>();
 builder.Services.AddScoped<IQuestionService, QuestionService>();
 
-// AutoMapper – Quiz profile
+
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<QuizAutoMapperProfiles>());
 
 builder.Services.AddCors();

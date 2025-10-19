@@ -294,10 +294,10 @@ namespace QuizService.Controllers
         [HttpGet("leaderboard")]
         [Authorize(Policy = "JwtSchemePolicy", Roles = "Admin, User")]
         public async Task<IActionResult> GetLeaderboard(
-        [FromQuery] string? timeFilter,
-        [FromQuery] long? quizId,
-        [FromQuery] int page = 1,
-        [FromQuery] int pageSize = 10)
+    [FromQuery] string? timeFilter,
+    [FromQuery] long? quizId,
+    [FromQuery] int page = 1,
+    [FromQuery] int pageSize = 10)
         {
             try
             {
